@@ -1,0 +1,59 @@
+---
+layout: default
+title: writing on software, book writeups, projects
+---
+
+{% include header.html %}
+
+<div id="series">
+    <!-- POST más actual para destacar -->
+    {% assign lastPost = site.posts | sort:"date" | last %}
+    {% capture temp %}{{lastPost.tags}}{% endcapture %}
+
+    <!-- SERIE del POST más actual -->
+    {% assign firstSerie =  site.data.series | where: "name", temp | first %}
+    <h3 id="{{ firstSerie.tag_name }}">{{ firstSerie.name }}<span>
+    {{ lastPost.date | date: "%-d de" }}
+    {% assign month = lastPost.date | date: "%B"  %}
+    {% case month %}
+      {% when 'September' %}Septiembre,
+      {% when 'June' %}Junio,
+      {% else %}{{ month }}
+    {% endcase %}
+    {{ lastPost.date | date: "%Y" }}
+    </span></h3>
+    <p>{{ firstSerie.desc }}</p>
+    <ul id="updated">
+    {% for post in site.tags[firstSerie.tag_name] %}
+      {% if forloop.first %}
+        <li {% if post.favorite %}class="favorite"{% endif %}>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+      {% unless forloop.first %}
+        <li {% if post.favorite %}class="favorite"{% endif %}>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endunless %}
+        
+    {% endfor %}
+    </ul>
+
+    <!-- para el conjunto de SERIES -->
+    {% for series in site.data.series%}
+      <!-- Resto de SERIES -->
+      {% if series.tag_name != temp %}
+        <h3 id="{{ series.tag_name }}">{{ series.name }}</h3>
+        <p>{{ series.desc }}</p>
+        <ul>
+        {% for post in site.tags[series.tag_name] %}
+          <li {% if post.favorite %}class="favorite"{% endif %}>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+</div>
+
+{% include footer.html %}

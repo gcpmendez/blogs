@@ -1,0 +1,19 @@
+- name: HTML
+  desc: |
+    Lenguaje de marcas de hipertexto (HyperText Markup Language) para la elaboración de páginas web.
+  tag_name: HTML
+
+- name: CSS
+  desc: |
+    Hojas de estilo en cascada (Cascading Stylesheets) es un lenguaje muy usado para establecer el diseño visual de las páginas web
+  tag_name: CSS
+
+- name: JavaScript
+  desc: |
+    Lenguaje de programación interpretado, orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.
+  tag_name: JavaScript
+
+- name: Jekyll
+  desc: |
+    Lenguaje de programación interpretado, orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.
+  tag_name: Jekyll
