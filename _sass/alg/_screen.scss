@@ -173,22 +173,22 @@
 .site-footer {
     position: relative;
     margin: 4rem 0 0 0;
-    padding: 4rem 0;
+    padding: 2rem 0;
     border-top: #827e7e 1px solid;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
-    line-height: 1.7em;
-    color: #BBC7CC;
+    font-size: .75em;
+    font-weight: 500;
+    letter-spacing: .2em;
+    text-align: center;
+    text-transform: uppercase;
     text-align: center;
 }
 
 .site-footer a {
-    color: #BBC7CC;
     text-decoration: underline;
 }
 
 .site-footer a:hover {
-    color: #50585D;
+    color: #000000;
 }
 
 .poweredby .icon-ghost {
