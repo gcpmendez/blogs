@@ -1,25 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>Matt Swanson's Blog</title>
- <link href="http://mdswanson.com/atom.xml" rel="self"/>
- <link href="http://mdswanson.com/"/>
- <updated>2017-06-27T23:41:10+01:00</updated>
- <id>http://mdswanson.com/</id>
- <author>
-   <name>Matt Swanson</name>
-   <email>matt@mdswanson.com</email>
-   <url>mdswanson.com</url>
- </author>
-
- 
- <entry>
-   <title>Una Jekyll</title>
-   <link href="http://mdswanson.com/Una-breve-introduccin-a-HTML.1/"/>
-   <published>2017-06-27T00:00:00+01:00</published>
-   <updated>2017-06-27T00:00:00+01:00</updated>
-   <id>http://swanson.github.com/Una-breve-introduccin-a-HTML.1</id>
-   <content type="html">&lt;p&gt;I was recently inspired by &lt;a href=&quot;http://techblog.ironfroggy.com/2010/10/weekly-noise-quiet-before-storm.html&quot;&gt;this post&lt;/a&gt;, which lays out an interesting “discipline” for
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-06-27T23:41:10+01:00</updated><id>http://localhost:4000/</id><entry><title type="html">Una Jekyll</title><link href="http://localhost:4000/Una-breve-introduccin-a-HTML.1/" rel="alternate" type="text/html" title="Una Jekyll" /><published>2017-06-27T00:00:00+01:00</published><updated>2017-06-27T00:00:00+01:00</updated><id>http://localhost:4000/Una-breve-introduccin-a-HTML.1</id><content type="html" xml:base="http://localhost:4000/Una-breve-introduccin-a-HTML.1/">&lt;p&gt;I was recently inspired by &lt;a href=&quot;http://techblog.ironfroggy.com/2010/10/weekly-noise-quiet-before-storm.html&quot;&gt;this post&lt;/a&gt;, which lays out an interesting “discipline” for
 working on side-projects.  The basic idea is to set aside time each weekend to plan out what project you are going to work on during the coming week.  Then, after the
 week is over, you reflect on what progress you made with a blog post and then write out next week’s plan. Rinse and repeat.&lt;/p&gt;
 
@@ -58,17 +37,7 @@ that I have my GitHub Pages setup, there is no excuse to not do it!&lt;/p&gt;
 
 &lt;p&gt;I was on a real reading binge for a few weeks…&lt;/p&gt;
 
-&lt;p&gt;Estimated time: 2-3 hours&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Una breve introducción a Jekyll</title>
-   <link href="http://mdswanson.com/Una-breve-introduccin-a-Jekyll/"/>
-   <published>2017-06-26T00:00:00+01:00</published>
-   <updated>2017-06-26T00:00:00+01:00</updated>
-   <id>http://swanson.github.com/Una-breve-introduccin-a-Jekyll</id>
-   <content type="html">&lt;p&gt;I was recently inspired by &lt;a href=&quot;http://techblog.ironfroggy.com/2010/10/weekly-noise-quiet-before-storm.html&quot;&gt;this post&lt;/a&gt;, which lays out an interesting “discipline” for
+&lt;p&gt;Estimated time: 2-3 hours&lt;/p&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">I was recently inspired by this post, which lays out an interesting “discipline” for working on side-projects. The basic idea is to set aside time each weekend to plan out what project you are going to work on during the coming week. Then, after the week is over, you reflect on what progress you made with a blog post and then write out next week’s plan. Rinse and repeat.</summary></entry><entry><title type="html">Una breve introducción a Jekyll</title><link href="http://localhost:4000/Una-breve-introduccin-a-Jekyll/" rel="alternate" type="text/html" title="Una breve introducción a Jekyll" /><published>2017-06-26T00:00:00+01:00</published><updated>2017-06-26T00:00:00+01:00</updated><id>http://localhost:4000/Una-breve-introduccin-a-Jekyll</id><content type="html" xml:base="http://localhost:4000/Una-breve-introduccin-a-Jekyll/">&lt;p&gt;I was recently inspired by &lt;a href=&quot;http://techblog.ironfroggy.com/2010/10/weekly-noise-quiet-before-storm.html&quot;&gt;this post&lt;/a&gt;, which lays out an interesting “discipline” for
 working on side-projects.  The basic idea is to set aside time each weekend to plan out what project you are going to work on during the coming week.  Then, after the
 week is over, you reflect on what progress you made with a blog post and then write out next week’s plan. Rinse and repeat.&lt;/p&gt;
 
@@ -107,17 +76,7 @@ that I have my GitHub Pages setup, there is no excuse to not do it!&lt;/p&gt;
 
 &lt;p&gt;I was on a real reading binge for a few weeks…&lt;/p&gt;
 
-&lt;p&gt;Estimated time: 2-3 hours&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Una breve introducción a JavaScript</title>
-   <link href="http://mdswanson.com/Una-breve-introduccin-a-JavaScript/"/>
-   <published>2017-06-26T00:00:00+01:00</published>
-   <updated>2017-06-26T00:00:00+01:00</updated>
-   <id>http://swanson.github.com/Una-breve-introduccin-a-JavaScript</id>
-   <content type="html">&lt;p&gt;I was recently inspired by &lt;a href=&quot;http://techblog.ironfroggy.com/2010/10/weekly-noise-quiet-before-storm.html&quot;&gt;this post&lt;/a&gt;, which lays out an interesting “discipline” for
+&lt;p&gt;Estimated time: 2-3 hours&lt;/p&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">I was recently inspired by this post, which lays out an interesting “discipline” for working on side-projects. The basic idea is to set aside time each weekend to plan out what project you are going to work on during the coming week. Then, after the week is over, you reflect on what progress you made with a blog post and then write out next week’s plan. Rinse and repeat.</summary></entry><entry><title type="html">Una breve introducción a JavaScript</title><link href="http://localhost:4000/Una-breve-introduccin-a-JavaScript/" rel="alternate" type="text/html" title="Una breve introducción a JavaScript" /><published>2017-06-26T00:00:00+01:00</published><updated>2017-06-26T00:00:00+01:00</updated><id>http://localhost:4000/Una-breve-introduccin-a-JavaScript</id><content type="html" xml:base="http://localhost:4000/Una-breve-introduccin-a-JavaScript/">&lt;p&gt;I was recently inspired by &lt;a href=&quot;http://techblog.ironfroggy.com/2010/10/weekly-noise-quiet-before-storm.html&quot;&gt;this post&lt;/a&gt;, which lays out an interesting “discipline” for
 working on side-projects.  The basic idea is to set aside time each weekend to plan out what project you are going to work on during the coming week.  Then, after the
 week is over, you reflect on what progress you made with a blog post and then write out next week’s plan. Rinse and repeat.&lt;/p&gt;
 
@@ -156,17 +115,7 @@ that I have my GitHub Pages setup, there is no excuse to not do it!&lt;/p&gt;
 
 &lt;p&gt;I was on a real reading binge for a few weeks…&lt;/p&gt;
 
-&lt;p&gt;Estimated time: 2-3 hours&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Una breve introducción a CSS</title>
-   <link href="http://mdswanson.com/Una-breve-introduccin-a-CSS/"/>
-   <published>2017-06-26T00:00:00+01:00</published>
-   <updated>2017-06-26T00:00:00+01:00</updated>
-   <id>http://swanson.github.com/Una-breve-introduccin-a-CSS</id>
-   <content type="html">&lt;p&gt;I was recently inspired by &lt;a href=&quot;http://techblog.ironfroggy.com/2010/10/weekly-noise-quiet-before-storm.html&quot;&gt;this post&lt;/a&gt;, which lays out an intersdfgesting “discipline” for
+&lt;p&gt;Estimated time: 2-3 hours&lt;/p&gt;</content><author><name></name></author><category term="JavaScript" /><summary type="html">I was recently inspired by this post, which lays out an interesting “discipline” for working on side-projects. The basic idea is to set aside time each weekend to plan out what project you are going to work on during the coming week. Then, after the week is over, you reflect on what progress you made with a blog post and then write out next week’s plan. Rinse and repeat.</summary></entry><entry><title type="html">Una breve introducción a CSS</title><link href="http://localhost:4000/Una-breve-introduccin-a-CSS/" rel="alternate" type="text/html" title="Una breve introducción a CSS" /><published>2017-06-26T00:00:00+01:00</published><updated>2017-06-26T00:00:00+01:00</updated><id>http://localhost:4000/Una-breve-introduccin-a-CSS</id><content type="html" xml:base="http://localhost:4000/Una-breve-introduccin-a-CSS/">&lt;p&gt;I was recently inspired by &lt;a href=&quot;http://techblog.ironfroggy.com/2010/10/weekly-noise-quiet-before-storm.html&quot;&gt;this post&lt;/a&gt;, which lays out an intersdfgesting “discipline” for
 working on side-projects.  The basic idea is to set aside time each weekend to plan out what project you are going to work on during the coming week.  Then, after the
 week is over, you reflect on what progress you made with a blog post and then write out next week’s plan. Rinse and repeat.&lt;/p&gt;
 
@@ -205,17 +154,7 @@ that I have my GitHub Pages setup, there is no excuse to not do it!&lt;/p&gt;
 
 &lt;p&gt;I was on a real reading binge for a few weeks…&lt;/p&gt;
 
-&lt;p&gt;Estimated time: 2-3 hours&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Una breve introducción a HTML</title>
-   <link href="http://mdswanson.com/Una-breve-introduccin-a-HTML/"/>
-   <published>2017-06-22T00:00:00+01:00</published>
-   <updated>2017-06-22T00:00:00+01:00</updated>
-   <id>http://swanson.github.com/Una-breve-introduccin-a-HTML</id>
-   <content type="html">&lt;p&gt;I was recently inspired by &lt;a href=&quot;http://techblog.ironfroggy.com/2010/10/weekly-noise-quiet-before-storm.html&quot;&gt;this post&lt;/a&gt;, which lays out an interesting “discipline” for
+&lt;p&gt;Estimated time: 2-3 hours&lt;/p&gt;</content><author><name></name></author><category term="CSS" /><summary type="html">I was recently inspired by this post, which lays out an intersdfgesting “discipline” for working on side-projects. The basic idea is to set aside time each weekend to plan out what project you are going to work on during the coming week. Then, after the week is over, you reflect on what progress you made with a blog post and then write out next week’s plan. Rinse and repeat.</summary></entry><entry><title type="html">Una breve introducción a HTML</title><link href="http://localhost:4000/Una-breve-introduccin-a-HTML/" rel="alternate" type="text/html" title="Una breve introducción a HTML" /><published>2017-06-22T00:00:00+01:00</published><updated>2017-06-22T00:00:00+01:00</updated><id>http://localhost:4000/Una-breve-introduccin-a-HTML</id><content type="html" xml:base="http://localhost:4000/Una-breve-introduccin-a-HTML/">&lt;p&gt;I was recently inspired by &lt;a href=&quot;http://techblog.ironfroggy.com/2010/10/weekly-noise-quiet-before-storm.html&quot;&gt;this post&lt;/a&gt;, which lays out an interesting “discipline” for
 working on side-projects.  The basic idea is to set aside time each weekend to plan out what project you are going to work on during the coming week.  Then, after the
 week is over, you reflect on what progress you made with a blog post and then write out next week’s plan. Rinse and repeat.&lt;/p&gt;
 
@@ -254,9 +193,4 @@ that I have my GitHub Pages setup, there is no excuse to not do it!&lt;/p&gt;
 
 &lt;p&gt;I was on a real reading binge for a few weeks…&lt;/p&gt;
 
-&lt;p&gt;Estimated time: 2-3 hours&lt;/p&gt;
-</content>
- </entry>
- 
- 
-</feed>
+&lt;p&gt;Estimated time: 2-3 hours&lt;/p&gt;</content><author><name></name></author><category term="HTML" /><summary type="html">I was recently inspired by this post, which lays out an interesting “discipline” for working on side-projects. The basic idea is to set aside time each weekend to plan out what project you are going to work on during the coming week. Then, after the week is over, you reflect on what progress you made with a blog post and then write out next week’s plan. Rinse and repeat.</summary></entry></feed>

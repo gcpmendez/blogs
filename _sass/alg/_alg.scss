@@ -36,7 +36,7 @@ header {
       a {
         color: #aaa;
         font-weight: 300;
-        text-transform: lowercase;
+        /*text-transform: lowercase;*/
         /*color: $accent-color;*/
         transition: all .2s ease;
       
@@ -45,10 +45,12 @@ header {
         }
       }
       
-      :after {
-        content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 ";
-        font-weight: bold;
-      }
+    
+    }
+
+    li:not(:last-child):after {
+      content: "\00a0 \00a0 \00a0 \00b7 \00a0 \00a0 \00a0 \00a0 ";
+      font-weight: bold;
     }
 
     li.no-bullet :after {
