@@ -1,6 +1,5 @@
 *.sw*
 .DS_Store
-_site
 .DS_Store
 .jekyll
 .bundle
@@ -10,5 +9,4 @@ Gemfile.lock
 node_modules
 package.json
 # Jekyll stuff
-/_site/
 .jekyll-metadata
