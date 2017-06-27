@@ -4,7 +4,7 @@
  <title>Matt Swanson's Blog</title>
  <link href="http://mdswanson.com/atom.xml" rel="self"/>
  <link href="http://mdswanson.com/"/>
- <updated>2017-06-27T23:41:10+01:00</updated>
+ <updated>2017-06-28T00:02:15+01:00</updated>
  <id>http://mdswanson.com/</id>
  <author>
    <name>Matt Swanson</name>
@@ -14,7 +14,7 @@
 
  
  <entry>
-   <title>Una Jekyll</title>
+   <title>Jekyll desde cero</title>
    <link href="http://mdswanson.com/Una-breve-introduccin-a-HTML.1/"/>
    <published>2017-06-27T00:00:00+01:00</published>
    <updated>2017-06-27T00:00:00+01:00</updated>

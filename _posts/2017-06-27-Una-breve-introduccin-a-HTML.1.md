@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Una Jekyll
+title: Jekyll desde cero
 categories:
 - blog
 tags:

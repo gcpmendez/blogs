@@ -4,6 +4,12 @@ layout: default
 
 {% include header.html %}
 
+{% capture words %}
+  {{ page.content | number_of_words }}
+{% endcapture %}
+
+
+{{ words | plus: 250 | divided_by: 180 | append: " minutos de lectura" }}
 <article>
   <h1 class="title">
     {{ page.title }}
