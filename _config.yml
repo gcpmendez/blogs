@@ -1,5 +1,5 @@
 url: https://gcpmendez.github.io/
-baseurl: /blog
+baseurl: /
 permalink: /:categories/:year/:month/:day/:title.html
 lsi: false
 markdown: kramdown
