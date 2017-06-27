@@ -181,11 +181,15 @@
     text-transform: uppercase;
 
     span:nth-child(1) {
-        text-align: left;
+        margin-top: -50px;
+        margin-left: 97px;
+        position: absolute;
     }
 
     span:nth-child(2) {
-        text-align: right;
+        margin-top: -50px;
+        margin-left: 476px;
+        position: absolute;
     }
 
 }
