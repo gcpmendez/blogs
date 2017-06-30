@@ -3331,6 +3331,9 @@ header nav {
   /*float: right;*/
   text-align: center;
 }
+header nav .active {
+  color: #232d3b;
+}
 header nav ul li {
   display: inline;
   text-decoration: none;
@@ -3437,8 +3440,13 @@ article p.subtitle {
   margin-bottom: .5em;
   margin-top: .3em;
 }
+article p.subtitle .minutes_of_read {
+  /*float: center;*/
+  display: block;
+}
 article p.subtitle .date {
-  float: right;
+  /*float: right;*/
+  display: block;
 }
 article p {
   font-family: "Nunito", sans-serif;

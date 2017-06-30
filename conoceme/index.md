@@ -6,7 +6,7 @@ skip_related: true
 
 ¡Hola!, soy Germán Méndez.
 
-Me gradue en la [Universidad de la laguna (ULL)](http://www.ull.es/) en [Ingeniería Informática](https://www.ull.es/estudios-docencia/grados/ingenieria-informatica/). Valoro sobretodo el desarrollo guiado por pruebas y el diseño de los elementos.
+Me gradué en la [Universidad de la laguna (ULL)](http://www.ull.es/) en [Ingeniería Informática](https://www.ull.es/estudios-docencia/grados/ingenieria-informatica/). Valoro sobretodo el desarrollo guiado por pruebas y el diseño de los elementos.
 
 Me divierto construyendo aplicaciones simples y aprendiendo sobre las nuevas tecnologías y los nuevos lenguajes. Me gusta hacer y tocar un poco de todo.
 
