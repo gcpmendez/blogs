@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Conóceme
-skip_related: true
 ---
 
 ¡Hola!, soy Germán Méndez.
@@ -14,7 +13,7 @@ Actualmente vivo y trabajo en Tenerife, Islas Canarias (España).
 
 ---
 
-Siempre me encuentro aprendiendo y tratando de mejorar mi arte; Considero que escribir software es uno de mis pasatiempos favoritos y por lo general lo práctico en algún tipo de proyecto paralelo. Resuelvo problemas con la mentalidad de un ingeniero y siempre me esfuerzo por escribir código limpio y legible.    
+Siempre me encuentro aprendiendo y tratando de mejorar mi arte; Considero que escribir software es uno de mis pasatiempos favoritos y por lo general lo practico en algún tipo de proyecto paralelo. Resuelvo problemas con la mentalidad de un ingeniero y siempre me esfuerzo por escribir código limpio y legible.    
   
 ##  <br/> 
   

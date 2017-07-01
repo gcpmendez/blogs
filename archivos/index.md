@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Archivos
-skip_related: true
+skip_related: false
 ---
+
 
 {% assign totalwords = 0 %}
 {% for post in site.posts %}
@@ -10,7 +11,13 @@ skip_related: true
   {% assign totalwords = totalwords | plus: wordcount %}
 {% endfor %}
 
-Desde {{ site.posts.last.date | date: "%B %d, %Y" }}, he escrito {{ totalwords }} palabras sobre desarrollo web, herramientas de desarrollo, desarrollo de sofware, ... . Espero que te hayas disfrutado leyendo algunas de esas palabras. Mis publicaciones favoritas se encuentran en negrita en la página principal.
+{% assign months = "Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre" | split: "|" %}
+{% assign m = site.posts.last.date | date: "%-m" | minus: 1 %}
+{% assign day = site.posts.last.date | date: "%d" %}
+{% assign month = months[m] %}
+{% assign year = site.posts.last.date | date: "%Y" %}
+
+Desde el {{ day }} de {{ month }}, he escrito {{ totalwords }} palabras sobre desarrollo web, herramientas de desarrollo, desarrollo de sofware, ... . Espero que te hayas disfrutado leyendo algunas de esas palabras. Mis publicaciones favoritas se encuentran en negrita en la página principal.
 
 
 <div id="archive">

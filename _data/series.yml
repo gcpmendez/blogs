@@ -15,5 +15,10 @@
 
 - name: Jekyll
   desc: |
-    Lenguaje de programación interpretado, orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.
+    Jekyll es un generador de sitios estáticos simple para blogs, sitios personales, proyectos u organizaciones. Escrito en Ruby por Tom Preston-Werner, cofundador de GitHub, se distribuye bajo una licencia de código abierto.
   tag_name: Jekyll
+
+- name: Bash
+  desc: |
+    Lenguaje de programación interpretado, orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.
+  tag_name: Bash
