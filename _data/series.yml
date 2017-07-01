@@ -15,7 +15,7 @@
 
 - name: Jekyll
   desc: |
-    Jekyll es un generador de sitios estáticos simple para blogs, sitios personales, proyectos u organizaciones. Escrito en Ruby por Tom Preston-Werner, cofundador de GitHub, se distribuye bajo una licencia de código abierto.
+    Jekyll es un generador de sitios estáticos simple para blogs, sitios personales, proyectos u organizaciones.
   tag_name: Jekyll
 
 - name: Bash
