@@ -15,7 +15,7 @@
 
 - name: Jekyll
   desc: |
-    Jekyll es un generador de sitios estáticos simple para blogs, sitios personales, proyectos u organizaciones.
+    Jekyll es un sistema de plantillas y un generador de sitios estáticos que usando unas reglas muy sencillas permite generar bajo demanda todo un site.
   tag_name: Jekyll
 
 - name: Bash
