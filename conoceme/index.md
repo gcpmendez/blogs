@@ -21,7 +21,8 @@ Siempre me encuentro aprendiendo y tratando de mejorar mi arte; Considero que es
 
 Puedes escribirme a [gcpmendez@gmail.com][email] or [@gcpmendez][twitter]. 
 
-Mi blog es [open source][os] - Cualquier falta de ortografía o revisión es siempre bienvenida via 'Pull Requests'.
+
+
 
 [os]: https://github.com/gcpmendez/gcpmendez.github.io
 [email]: mailto:gcpmendez@gmail.com
