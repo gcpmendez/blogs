@@ -5,8 +5,6 @@ categories:
 - blog
 tags:
 - Angular
-plataforma:
-- Udemy
 ---
 
 # Introducción
