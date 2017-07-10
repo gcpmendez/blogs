@@ -23,8 +23,8 @@
      Es un programa informático, cuya función consiste en interpretar órdenes, y un lenguaje de programación de consola.
   tag_name: Bash
 
-  - name: Angular
+- name: Angular
   desc: |
-    Framework MVC para construir aplicaciones cliente en HTML, CSS y Javascript/TypeScript
+    Framework MVC para construir aplicaciones cliente en HTML, CSS y Javascript/TypeScript.
   tag_name: Angular
   
