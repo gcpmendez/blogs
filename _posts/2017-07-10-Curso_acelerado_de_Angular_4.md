@@ -4,8 +4,7 @@ title: Curso acelerado de angular 4
 categories:
 - blog
 tags:
-- HTML
-- Web
+- Angular
 plataforma:
 - Udemy
 ---
