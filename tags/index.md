@@ -28,7 +28,7 @@ skip_related: true
 <div>
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    </br>
+    <br/>
     <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
     {% for post in site.tags[this_word] %}{% if post.title != null %}
       <div>
