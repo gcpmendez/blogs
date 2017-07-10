@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Curso acelerado de angular 4
+title: Curso acelerado de Angular 4
 categories:
 - blog
 tags:
