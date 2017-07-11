@@ -47,7 +47,7 @@ description: Blog personal que intento mantener actualizado
         <h3 id="{{ series.tag_name }}">{{ series.name }}</h3>
         <p>{{ series.desc }}</p>
         <ul>
-        {% for post in site.tags[series.tag_name] %}
+        {% for post in site.tags[series.tag_name]  %}
           <li {% if post.favorite %}class="favorite"{% endif %}>
             <a href="{{ post.url }}">{{ post.title }}</a>
           </li>
