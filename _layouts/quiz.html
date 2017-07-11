@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+{% capture words %}
+  {{ page.content | number_of_words }}
+{% endcapture %}
+
+{% assign months = "Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre" | split: "|" %}
+{% assign m = page.date | date: "%-m" | minus: 1 %}
+{% assign day = page.date | date: "%d" %}
+{% assign month = months[m] %}
+{% assign year = page.date | date: "%Y" %}
+
+
+
+
+<article>
+  <h1 class="title">
+    {{ page.title }}
+  </h1>
+
+  {% assign tag_count = page.tags | size %}
+  <p class="subtitle">
+    {% if page.subtitle %}
+      <span>{{ page.subtitle }}</span>
+    {% elsif tag_count == 0 %}
+      <span>{{ page.date | date: "%B %d, %Y" }}</span>
+    {% else %}
+      <span>
+        {% if tag_count > 0 %}
+          Etiquetas:
+          <a href="/#{{ page.tags.first }}">{{ sn | replace: "_", " " }}</a>
+          {% for sn in page.more_tags %}
+              , <a href="/#{{ sn }}">{{ sn | replace: "_", " " }}</a>
+          {% endfor %}
+        {% else %}
+          &nbsp;
+        {% endif %}
+      </span>
+
+      <span class="minutes_of_read">
+        Tiempo de lectura: {{ words | plus: 250 | divided_by: 180 | append: " minutos" }}
+      </span>
+      <span class="date">
+        {{ day }} de {{ month }}, {{ year }}
+      </span>
+    {% endif %}
+  </p>
+
+  </br>
+
+    <!-- Rellenamos con las preguntas y las respuestas -->
+    {% for Q in page.questions %}
+        <p>{{ Q.question }}</p>
+        <form>
+        {% for A in Q.answers %}
+            <input type="radio" name="empleoactual" value="tiempocompleto">{{ A[1] }}<br>   
+        {% endfor %}
+        </form>
+        <br/>
+    {% endfor %}
+
+
+</article>
+
