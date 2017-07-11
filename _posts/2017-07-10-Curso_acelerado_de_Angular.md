@@ -11,7 +11,6 @@ tags:
 - TypeScript
 ---
 
-
 # Introducción
 
 En este curso veremos:
