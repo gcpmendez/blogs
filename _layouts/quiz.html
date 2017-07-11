@@ -2,12 +2,6 @@
 layout: default
 ---
 
-{% include header.html %}
-
-{% capture words %}
-  {{ page.content | number_of_words }}
-{% endcapture %}
-
 {% assign months = "Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre" | split: "|" %}
 {% assign m = page.date | date: "%-m" | minus: 1 %}
 {% assign day = page.date | date: "%d" %}
@@ -16,53 +10,98 @@ layout: default
 
 
 
+<!-- Cabecera -->
+{% include header.html %}
 
+<!-- Artículo -->
 <article>
+
+  <!-- Título y subtítulo -->
   <h1 class="title">
-    {{ page.title }}
+  {{ page.title }}
   </h1>
-
-  {% assign tag_count = page.tags | size %}
   <p class="subtitle">
-    {% if page.subtitle %}
-      <span>{{ page.subtitle }}</span>
-    {% elsif tag_count == 0 %}
-      <span>{{ page.date | date: "%B %d, %Y" }}</span>
-    {% else %}
-      <span>
-        {% if tag_count > 0 %}
-          Etiquetas:
-          <a href="/#{{ page.tags.first }}">{{ sn | replace: "_", " " }}</a>
-          {% for sn in page.more_tags %}
-              , <a href="/#{{ sn }}">{{ sn | replace: "_", " " }}</a>
-          {% endfor %}
-        {% else %}
-          &nbsp;
-        {% endif %}
-      </span>
-
-      <span class="minutes_of_read">
-        Tiempo de lectura: {{ words | plus: 250 | divided_by: 180 | append: " minutos" }}
-      </span>
-      <span class="date">
-        {{ day }} de {{ month }}, {{ year }}
-      </span>
-    {% endif %}
+    <span class="date">
+    Última actualización: {{ day }} de {{ month }}, {{ year }}
+    </span>
   </p>
 
-  </br>
+  <br/>
 
-    <!-- Rellenamos con las preguntas y las respuestas -->
-    {% for Q in page.questions %}
-        <p>{{ Q.question }}</p>
-        <form>
-        {% for A in Q.answers %}
-            <input type="radio" name="empleoactual" value="tiempocompleto">{{ A[1] }}<br>   
-        {% endfor %}
-        </form>
-        <br/>
-    {% endfor %}
+  <div id="quiz">
+  <!-- Rellenamos página con las preguntas y las respuestas -->
+  {% for Q in page.questions %}
+      {% capture str_temp %}question{{ forloop.index }}{% endcapture %}
+      
+      <div class="question" value="{{ Q.correctAnswer }}">
 
+      {{ Q.question }}
+   
+      </div>
+
+      <div class="answers">
+      {% for A in Q.answers %}
+        <label><input type="radio" name="{{ str_temp }}" value="{{ A[0] }}">
+        {{ A[1] }}
+        </label>
+      {% endfor %}
+      </div>
+      <br/>
+  {% endfor %}
+  </div>
+
+  <!-- Botón para comprobar el resultado -->
+  <center><button id="submit" type="button">Check your answers</button></center>
+  <p id="results">cero</p>
 
 </article>
 
+
+
+<script>
+(function() {
+  
+  function showResults() {
+    // gather answer containers from our quiz
+    const questionContainers = quizContainer.querySelectorAll(".question");
+    const answerContainers = quizContainer.querySelectorAll(".answers");
+
+    // keep track of user's answers
+    let numCorrect = 0;
+
+    // for each question...
+    for (var i = 0, iLen = questionContainers.length; i < iLen; i++) {
+
+      // find selected answer
+      var userAnswer = (answerContainers[i].querySelector(`input[name=question${i+1}]:checked`) || {}).value;
+      var questionAnswer = questionContainers[i].attributes.value.value
+     
+
+      // if answer is correct
+      if (userAnswer === questionAnswer) {
+        // add to the number of correct answers
+        numCorrect++;
+
+        // color the answers green
+        answerContainers[i].style.color = "lightgreen";
+      } else {
+        // if answer is wrong or blank
+        // color the answers red
+        answerContainers[i].style.color = "red";
+      }
+    }
+
+    // show number of correct answers out of total
+    resultsContainer.innerHTML = `${numCorrect} out of ${questionContainers.length}`;
+  }
+
+  // Obténemos elementos del quiz
+  const quizContainer = document.getElementById("quiz");
+  const resultsContainer = document.getElementById("results");
+  const submitButton = document.getElementById("submit");
+  
+
+  // on submit, show results
+  submitButton.addEventListener("click", showResults);
+})();
+</script>

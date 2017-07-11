@@ -6,24 +6,33 @@ description: Blog personal que intento mantener actualizado
 
 {% include header.html %}
 
+
+
 <div id="series">
     <!-- POST más actual para destacar -->
     {% assign lastPost = site.posts | sort:"date" | last %}
+
+    {% assign months = "Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre" | split: "|" %}
+    {% assign m = lastPost.date | date: "%-m" | minus: 1 %}
+    {% assign day = lastPost.date | date: "%-d" %}
+    {% assign month = months[m] %}
+    {% assign year = lastPost.date | date: "%Y" %}
+
     {% capture temp %}{{lastPost.tags}}{% endcapture %}
 
     <!-- SERIE del POST más actual -->
     {% assign firstSerie =  site.data.series | where: "name", temp | first %}
-    <h3 id="{{ firstSerie.tag_name }}">{{ firstSerie.name }}<span>
-    {{ lastPost.date | date: "%-d de" }}
-    {% assign month = lastPost.date | date: "%B"  %}
-    {% case month %}
-      {% when 'September' %}Septiembre,
-      {% when 'June' %}Junio,
-      {% else %}{{ month }}
-    {% endcase %}
-    {{ lastPost.date | date: "%Y" }}
-    </span></h3>
-    <p>{{ firstSerie.desc }}</p>
+    <h3 id="{{ firstSerie.tag_name }}">
+      {{ firstSerie.name }}
+      <span> 
+      {{ day }} de {{ month }}, {{ year }} 
+      </span>
+    </h3>
+
+    <p>
+    {{ firstSerie.desc }}
+    </p>
+
     <ul >
     {% for post in site.tags[firstSerie.tag_name] %}
       {% if forloop.first %}
