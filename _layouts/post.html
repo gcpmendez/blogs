@@ -32,22 +32,9 @@ layout: default
       <span>
         {% if tag_count > 0 %}
           Etiquetas:
-          {% for sn in page.tags %}
-            {% if forloop.last %}
-              <a href="/#{{ sn }}">{{ sn | replace: "_", " " }}</a>
-            {% else %}
-              <a href="/#{{ sn }}">{{ sn | replace: "_", " " }}</a>,
-            {% endif %}
-          {% endfor %}
-
+          <a href="/#{{ page.tags.first }}">{{ sn | replace: "_", " " }}</a>
           {% for sn in page.more_tags %}
-            {% if forloop.last %}
-              <a href="/#{{ sn }}">{{ sn | replace: "_", " " }}</a>
-            {% elsif forloop.first %}
-              , <a href="/#{{ sn }}">{{ sn | replace: "_", " " }}</a>,
-            {% else %}
-              <a href="/#{{ sn }}">{{ sn | replace: "_", " " }}</a>,
-            {% endif %}
+              , <a href="/#{{ sn }}">{{ sn | replace: "_", " " }}</a>
           {% endfor %}
         {% else %}
           &nbsp;
