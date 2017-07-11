@@ -22,7 +22,7 @@ layout: default
   </h1>
   <p class="subtitle">
     <span class="date">
-    Última actualización: {{ day }} de {{ month }}, {{ year }}
+    Última actualización: <span style="color:black">{{ day }} de {{ month }}, {{ year }}</span>
     </span>
   </p>
 
@@ -49,10 +49,11 @@ layout: default
       <br/>
   {% endfor %}
   </div>
-
+<br/><br/>
   <!-- Botón para comprobar el resultado -->
-  <center><button id="submit" type="button">Check your answers</button></center>
-  <p id="results">cero</p>
+  <center><span id="results"></span></center>
+   <center><button id="submit" type="button">Check your answers</button></center>
+  
 
 </article>
 

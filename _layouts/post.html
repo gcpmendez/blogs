@@ -2,57 +2,68 @@
 layout: default
 ---
 
+<!-- Cabecera -->
 {% include header.html %}
 
+<!-- Variable words -->
 {% capture words %}
   {{ page.content | number_of_words }}
 {% endcapture %}
 
+<!-- Variables day, month y year -->
 {% assign months = "Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre" | split: "|" %}
 {% assign m = page.date | date: "%-m" | minus: 1 %}
 {% assign day = page.date | date: "%d" %}
 {% assign month = months[m] %}
 {% assign year = page.date | date: "%Y" %}
 
-
-
-
+<!-- Publicación -->
 <article>
+
+  <!-- Variables tag_count y moreTags_count -->
+  {% assign tag_count = page.tags | size %}
+  {% assign moreTags_count = page.more_tags | size %}
+
+  <!-- Título -->
   <h1 class="title">
     {{ page.title }}
   </h1>
 
-  {% assign tag_count = page.tags | size %}
+  <!-- Subtitulo -->
   <p class="subtitle">
-    {% if page.subtitle %}
-      <span>{{ page.subtitle }}</span>
-    {% elsif tag_count == 0 %}
-      <span>{{ page.date | date: "%B %d, %Y" }}</span>
-    {% else %}
-      <span>
-        {% if tag_count > 0 %}
-          Etiquetas:
-          <a href="/#{{ page.tags.first }}">{{ sn | replace: "_", " " }}</a>
-          {% for sn in page.more_tags %}
-              , <a href="/#{{ sn }}">{{ sn | replace: "_", " " }}</a>
-          {% endfor %}
+
+    <!-- Etiquetas -->
+    <span>
+    {% if moreTags_count > 0 %}
+      Etiquetas:
+      <a href="/#{{ page.tags }}">{{ page.tags }}</a>,
+      {% for moreTags in page.more_tags %}
+        {% if forloop.last %}
+          <a href="/#{{ moreTags }}">{{ moreTags }}</a>
         {% else %}
-          &nbsp;
+          <a href="/#{{ moreTags }}">{{ moreTags }}</a>,
         {% endif %}
-      </span>
-
-      <span class="minutes_of_read">
-        Tiempo de lectura: {{ words | plus: 250 | divided_by: 180 | append: " minutos" }}
-      </span>
-      <span class="date">
-        {{ day }} de {{ month }}, {{ year }}
-      </span>
+      {% endfor %}
+    {% else %}
+      <a href="/#{{ page.tags }}">{{ page.tags }}</a>
     {% endif %}
-  </p>
+    </span>
 
-  </br>
+    <!-- Tiempo de lectura -->
+    <span class="minutes_of_read">
+      Tiempo de lectura: <span style="color:black">{{ words | plus: 250 | divided_by: 180 | append: " minutos" }} </span>
+    </span>
+
+    <!-- Fecha de publicación -->
+    <span class="date">
+      Fecha de publicación: <span style="color:black">{{ day }} de {{ month }}, {{ year }}</span>
+    </span>
+    </p>
+
+    </br>
+
+  <!-- Contenido de la publicación -->
   <div id="post">{{ content }}</div>      
-
 
 </article>
 
