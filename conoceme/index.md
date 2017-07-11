@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: page
 title: Conóceme
+date: "2017-07-10"
 ---
 
 ¡Hola!, soy Germán Méndez.

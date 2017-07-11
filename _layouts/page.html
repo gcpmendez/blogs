@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<!-- Cabecera del cuerpo-->
+{% include header.html %}
+
+<!-- Variables day, month y year -->
+{% assign months = "Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre" | split: "|" %}
+{% assign m = page.date | date: "%-m" | minus: 1 %}
+{% assign day = page.date | date: "%d" %}
+{% assign month = months[m] %}
+{% assign year = page.date | date: "%Y" %}
+
+<!-- Publicación -->
+<article>
+
+  <!-- Variables tag_count y moreTags_count -->
+  {% assign tag_count = page.tags | size %}
+  {% assign moreTags_count = page.more_tags | size %}
+
+  <!-- Título -->
+  <h1 class="title">
+    {{ page.title }}
+  </h1>
+
+  </br>
+
+  <!-- Contenido de la publicación -->
+  <div id="post">{{ content }}</div>      
+
+</article>
+

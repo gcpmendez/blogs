@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title: Etiquetas
-skip_related: true
+date: "2017-07-10"
 ---
 
 <!-- Get the tag name for every tag on the site and set them to the `site_tags` variable. -->

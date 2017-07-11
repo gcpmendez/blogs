@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title: Archivos
-skip_related: false
+date: "2017-07-10"
 ---
 
 
