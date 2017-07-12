@@ -87,6 +87,8 @@ section {
 article {
   @include clearfix;
   text-align: left;
+  font-weight: 300;
+  font-family: "Nunito", sans-serif;
 
   h1 {
     font-family: $sans-serif-article-2;
@@ -163,7 +165,6 @@ article {
   }
 
   ul {
-    font-family: "Nunito", sans-serif;
     margin: 1em 0;
     list-style: circle;
   }

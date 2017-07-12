@@ -17,7 +17,7 @@ date: "2017-07-10"
 {% assign month = months[m] %}
 {% assign year = site.posts.last.date | date: "%Y" %}
 
-Desde el {{ day }} de {{ month }}, he escrito {{ totalwords }} palabras sobre desarrollo web, herramientas de desarrollo, desarrollo de sofware, ... . Espero que te hayas disfrutado leyendo algunas de esas palabras. Mis publicaciones favoritas se encuentran en negrita en la página principal.
+Desde el <ins>{{ day }} de {{ month }} de {{ year }}</ins> he escrito <ins>{{ totalwords }} palabras</ins> sobre desarrollo web, desarrollo de software, herramientas de desarrollo, entre otras cosas. Espero que hayas disfrutado leyendo algunas de esas palabras. He destacado mis publicaciones favoritas añadiendole el <b>formato de negrita</b>.
 
 
 <div id="archive">
