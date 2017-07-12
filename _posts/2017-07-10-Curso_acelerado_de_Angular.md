@@ -16,11 +16,11 @@ more_tags:
 
 En este curso veremos:
 - Una rápida introducción a Angular
-- La arquitectura de las aplicaciones en con Angular
-- La configuración el entorno de desarrollo
+- La arquitectura de las aplicaciones hechas con Angular
+- La configuración del entorno de desarrollo
 - Construiremos una primera aplicación sencilla
-- Repasaremos la estructura del proyecto
-- Revisaremos las distintas versiones de Angular
+- Repasaremos la estructura de un proyecto en Angular
+- Revisaremos las distintas versiones de Angular a lo largo de la historia
 
 # ¿Qué es Angular?
 
@@ -34,6 +34,10 @@ Angular es un framework para construir aplicaciones cliente en HTML, CSS y JavaS
 - Hace que nuestras aplicaciones sean mas testeables.
 
 # Arquitectura de las aplicaciones en Angular.
+Un monton de aplicaciones tienen dos partes: el front-end y el back-end
+el front-end tambien llamado cliente es la parte que se muestra en un navegador web. 
+Esencialmente muestra la interfaz de usuario diseñada con HTML, CSS, TypeScript y angular.
+
 
 
 # Configurando el entorno de desarrollo
