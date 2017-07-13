@@ -14,29 +14,36 @@ more_tags:
 
 # Introducción
 
-En este curso veremos:
-- Una rápida introducción a Angular
-- La arquitectura de las aplicaciones hechas con Angular
-- La configuración del entorno de desarrollo
+Para aprender Angular con fluidez en estas entradas necesitarás conocimientos básicos de programación con javascript.
+
+En este curso acelerado sobre Angular veremos:
+- Conceptos básicos sobre Angular
+- Estructura de una aplicación en Angular
+- Configuración del entorno de desarrollo
 - Construiremos una primera aplicación sencilla
-- Repasaremos la estructura de un proyecto en Angular
 - Revisaremos las distintas versiones de Angular a lo largo de la historia
+
+Esto sentará las bases para que puedas desarrollar aplicaciones web escalables y mantenibles por tu cuenta.
 
 # ¿Qué es Angular?
 
-Angular es un framework para construir aplicaciones cliente en HTML, CSS y JavaScript/TypeScript.
+Angular es un framework MVC (Modelo Vista Controlador) que se ha posicionado como un referente en el desarrollo web Front-End, ya que nos permite construir aplicaciones SPA (Single Page Applications) de forma ágil.
 
 # ¿Por qué necesitamos Angular?
-- Patron prototipo
-- Patron modulo de revelado
-- Nos ofrece una estructura limpia en nuestras aplicaiones
-- Incluye bastante codigo reusable
-- Hace que nuestras aplicaciones sean mas testeables.
 
-# Arquitectura de las aplicaciones en Angular.
-Un monton de aplicaciones tienen dos partes: el front-end y el back-end
-el front-end tambien llamado cliente es la parte que se muestra en un navegador web. 
-Esencialmente muestra la interfaz de usuario diseñada con HTML, CSS, TypeScript y angular.
+Entre otras cosas Angular nos ofrece:
+- Una estructura limpia en nuestras aplicaciones
+- Incluye código reusable
+- Hace que nuestras aplicaciones sean testeables
+
+# Estructura de una aplicación en Angular
+
+Comunmente una aplicación web actual tendría la siguiente estructura:
+- **Front-end**: es la parte del cliente, lo que ve el usuario en su navegador web. Abarcaria HTML, CSS y JavaScript
+- **Back-end**: es la parte del servidor web, donde se procesa y se envía la informacion al navegador del usuario. Abarca PHP, Ruby on Rails, Django, Node.js y .NET.
+- **Base de datos**: es donde se guardan los datos que envía el usuario o de donde sacamos los que le queremos mostrar a éste. Pueden ser MongoDB, MySQL, PostgreSQL, Microsoft SQL Server o Apache Cassandra.
+
+
 
 
 
