@@ -54,9 +54,6 @@ Los servicios HTTP o API son punto final que son accesibles mediante el **protoc
 Necesitaremos instalar nodejs, provee algunas herramientas para trabajar con proyectos en angular.
 
 
-``` javascript
-function saludo(nombre) {
-        alert('Hola, ' + nombre);
-        }
-```
+ <script markdown='1' src="https://gist.github.com/gcpmendez/0a428b4ff0c66a226b9b287d6363e512.js"></script>
+
 
