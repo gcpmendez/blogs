@@ -54,11 +54,9 @@ Los servicios HTTP o API son punto final que son accesibles mediante el **protoc
 Necesitaremos instalar nodejs, provee algunas herramientas para trabajar con proyectos en angular.
 
 
-``` bash
-'HelloWorld.js'
-$ node --version
-$ node --version
-$ node --version
-
+``` javascript
+function saludo(nombre) {
+        alert('Hola, ' + nombre);
+        }
 ```
 
