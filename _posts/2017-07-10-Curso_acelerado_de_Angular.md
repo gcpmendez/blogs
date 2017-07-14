@@ -12,6 +12,8 @@ more_tags:
 - TypeScript
 ---
 
+
+# <img src="./../static/angular_js.svg" alt="Drawing" style="width: 300px;"/>
 # Introducción
 
 Para aprender Angular con fluidez en estas entradas necesitarás conocimientos básicos de programación con javascript.
@@ -39,14 +41,24 @@ Entre otras cosas Angular nos ofrece:
 # Estructura de una aplicación en Angular
 
 Comunmente una aplicación web actual tendría la siguiente estructura:
-- **Front-end**: es la parte del cliente, lo que ve el usuario en su navegador web. Abarcaria HTML, CSS y JavaScript
+- **Front-end**: es la parte del cliente, lo que ve el usuario en su navegador web. Abarca HTML, CSS, JavaScript/TypeScript y Angular.
 - **Back-end**: es la parte del servidor web, donde se procesa y se envía la informacion al navegador del usuario. Abarca PHP, Ruby on Rails, Django, Node.js y .NET.
-- **Base de datos**: es donde se guardan los datos que envía el usuario o de donde sacamos los que le queremos mostrar a éste. Pueden ser MongoDB, MySQL, PostgreSQL, Microsoft SQL Server o Apache Cassandra.
+    + **Base de datos**: es donde se guardan los datos que envía el usuario o de donde sacamos los que le queremos mostrar a éste. Pueden ser MongoDB, MySQL, PostgreSQL, Microsoft SQL Server o Apache Cassandra.
+    + **APIs**
 
 
+Los servicios HTTP o API son punto final que son accesibles mediante el **protocolo HTTP**.
 
 
+# Configurando el entorno de desarrollo 
+Necesitaremos instalar nodejs, provee algunas herramientas para trabajar con proyectos en angular.
 
-# Configurando el entorno de desarrollo
-Necesitaremos usar nodejs
+
+``` bash
+'HelloWorld.js'
+$ node --version
+$ node --version
+$ node --version
+
+```
 
