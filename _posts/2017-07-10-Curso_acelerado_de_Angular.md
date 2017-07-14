@@ -13,7 +13,7 @@ more_tags:
 ---
 
 
-# <img src="./../static/angular_js.svg" alt="Drawing" style="width: 300px;"/>
+# <img src="./../static/angular_js.png" alt="Drawing" style="width: 300px;"/>
 # Introducción
 
 Para aprender Angular con fluidez en estas entradas necesitarás conocimientos básicos de programación con javascript.
@@ -51,8 +51,28 @@ Los servicios HTTP o API son punto final que son accesibles mediante el **protoc
 
 
 # Configurando el entorno de desarrollo 
-Necesitaremos instalar nodejs, provee algunas herramientas para trabajar con proyectos en angular.
+Necesitaremos instalar **nodejs**, el cual  provee algunas herramientas que necesitamos para contruir aplicaciones en Angular.
 
+http.nodejs.com
+
+``` sh 
+$ node --version
+v6.10.3
+
+```
+La version minima para construir aplicaciones angular es la v.6.9
+
+Una vez que tengamos node NPM instalaremos Angular CLI command line interface
+``` sh
+$ sudo npm install -g @angular/cli
+Password:
+
+```
+
+``` angular
+$ ng --version
+
+```
 
  <script markdown='1' src="https://gist.github.com/gcpmendez/0a428b4ff0c66a226b9b287d6363e512.js"></script>
 
