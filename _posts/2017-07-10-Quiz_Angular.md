@@ -1,6 +1,6 @@
 ---
 layout: quiz
-title: Quiz Angular
+title: Quiz
 categories:
 - blog
 tags:

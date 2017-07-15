@@ -42,3 +42,8 @@
   desc: |
     Lenguaje de marcado ligero creado que trata de conseguir la máxima legibilidad y facilidad de publicación tanto en su forma de entrada como de salida.
   tag_name: Markdown
+
+- name: Git
+  desc: |
+    Software de control de versiones diseñado por Linus Torvalds.
+  tag_name: Git

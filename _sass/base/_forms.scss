@@ -13,6 +13,7 @@ select {
 
 label {
   margin-bottom: $base-line-height / 4;
+  margin-left: 2em;
 
   &.required:after {
     content: "*";
