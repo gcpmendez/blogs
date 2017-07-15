@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cabeceras
+title: Cita en bloque
 categories:
 - blog
 tags:

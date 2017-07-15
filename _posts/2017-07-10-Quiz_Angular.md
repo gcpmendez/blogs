@@ -1,6 +1,6 @@
 ---
 layout: quiz
-title: Quiz
+title: Test
 categories:
 - blog
 tags:
