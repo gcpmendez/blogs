@@ -23,12 +23,19 @@ td {
 
 th {
     text-align: center;
+    width: 33.3%;
 }
 tr:nth-child(even) {
     background-color: rgba(238, 238, 238, 0.57);
 }
 td:first-child {
     text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+td:nth-child(2) {
+   
+    font-family: 'Inconsolata', monospace;
 }
 
 table h1 {
@@ -68,7 +75,7 @@ h6 {
 
 <!-- Contenido post -->
 # Explicación
-Las `#`'s son uno de los métodos utilizados en **Markdown** para crear las cabeceras. Debes usarlos añadiendo uno por cada nivel existente:
+Empleamos el carácter almohadilla `#` para crear las cabeceras en **Markdown**. En la siguiente tabla se pueden ver como vamos añadiendo una almohadilla por cada nivel existente:
 
 
 <table>
@@ -116,7 +123,7 @@ Las `#`'s son uno de los métodos utilizados en **Markdown** para crear las cabe
 
 
 
-Existe otra manera de crear los dos primeros niveles de las cabeceras que sería la siguiente:
+Existe otra manera de crear los dos primeros niveles de las cabeceras como podemos ver en la siguiente tabla:
 
 <table>
   <tr>
