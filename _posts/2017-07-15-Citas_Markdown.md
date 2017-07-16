@@ -81,7 +81,7 @@ Empleamos el carácter mayor que `>` para crear **bloques de cita**. En la sigui
   </tr>
   <tr>
     <td id="h1">
-      Esto es una línea normal <br/>
+      Esto es una línea normal <br/><br/>
       > Esto es parte de un bloque de cita.<br/>
       > Esto es parte del mismo bloque de cita.
     </td>
@@ -92,60 +92,37 @@ Empleamos el carácter mayor que `>` para crear **bloques de cita**. En la sigui
   </tr>
   <tr>
       <td>
-      > Esto es parte de un bloque de cita.<br/>
-      Esto continúa el bloque incluso aunque no hay símbolo 'mayor que'.<br/>
+        > Esto es parte de un bloque de cita.<br/>
+        Esto continúa el bloque incluso aunque no hay símbolo 'mayor que'.<br/><br/>
 
-      La línea en blanco finaliza el bloque.
-</td>
-      <td><blockquote>Esto es parte de un bloque de cita. Esto continúa el bloque incluso aunque no hay símbolo 'mayor que'.</blockquote>
+        La línea en blanco finaliza el bloque.
+      </td>
+      <td>
+        <blockquote>Esto es parte de un bloque de cita. Esto continúa el bloque incluso aunque no hay símbolo 'mayor que'.</blockquote>
 
-La línea en blanco finaliza el bloque.</td>
+      La línea en blanco finaliza el bloque.</td>
   </tr>
-   <tr>
-      <td>### Esto es un H3</td>
-      <td>Esto es un H3</td>
+  <tr>
+    <td>
+        Esto es una línea normal<br/><br/>
+        > Esto es parte de un bloque de cita.<br/>
+        > Esto es parte del mismo bloque de cita.<br/>
+        ><br/>
+        > > Esto es otro bloque de cita anidado.<br/>
+        > > Esto es parte del bloque anidado.<br/>
+        ><br/>
+        > Esto es parte del bloque de cita de primer nivel.
+    </td>
+    <td>
+        Esto es una línea normal
+        <br/><br/>
+        <blockquote>Esto es parte de un bloque de cita. Esto es parte del mismo bloque de cita.<br/>
+        <blockquote>Esto es otro bloque de cita anidado. Esto es parte del bloque anidado.<br/></blockquote>
+        <br/>
+        Esto es parte del bloque de cita de primer nivel.</blockquote>
+    </td>
   </tr>
 </table>
 
-<br/>
-
-> **Información:**
-> También puedes cerrar las cabeceras con el mismo número de almohadillas, por ejemplo escribiendo `### Esto es un H3 ###`. Pero la única finalidad de esto es un **motivo puramente estético**.
-
-
-
-Existe otra manera de crear los dos primeros niveles de las cabeceras que sería la siguiente:
-
-<table>
-  <tr>
-    <th>Etiqueta HTML</th>
-    <th>Sintaxis Markdown</th>
-    <th>Salida HTML</th>
-  </tr>
-  <tr>
-    <td>H1</td>
-      <td id="h1">Esto es un H1 <br> 
-      =============</td>
-        <td><h1>Esto es un H1</h1></td>
-  </tr>
-   <tr>
-    <td>H2</td>
-      <td>Esto es un H2   <br>    
-      -------</td>
-        <td><h2>Esto es un H2</h2></td>
-  </tr>
-
- 
-
-</table>
 
 <br/>
-
-> **Información:**
-> No existe un número concreto de signos `=`'s o `-`'s que necesites escribir para que esto funcione, bastaría simplemente con uno.
-
-
-
-
-<br/>
-

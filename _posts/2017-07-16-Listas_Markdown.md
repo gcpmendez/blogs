@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cabeceras
+title: Listas
 categories:
 - blog
 tags:
@@ -151,7 +151,7 @@ Existe otra manera de crear los dos primeros niveles de las cabeceras como podem
 <br/>
 
 > **Información:**
-> No existe un número concreto de signos `=`'s o `-`'s que necesites escribir para que esto funcione, bastaría simplemente con uno.
+> No existe un número concreto de caracteres `=`'s o `-`'s que necesites escribir para que esto funcione, bastaría simplemente con uno.
 
 
 
