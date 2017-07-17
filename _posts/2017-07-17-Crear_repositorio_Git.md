@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ramas y etiquetas
+title: Crear repositorio
 categories:
 - blog
 tags:
@@ -71,7 +71,7 @@ h6 {
 </style>
 
 <!-- Imagen Markdown -->
-# <img src="./../static/git.png" alt="Drawing" style="width: 200px;"/>
+# <img src="./../static/git.png" alt="Drawing" style="width: 170px;"/>
 
 <!-- Contenido post -->
 # Explicación
