@@ -71,7 +71,7 @@ h6 {
 </style>
 
 <!-- Imagen Markdown -->
-# <img src="./../static/git.png" alt="Drawing" style="width: 200px;"/>
+# <img src="./../static/git.png" alt="Drawing" style="width: 300px;"/>
 
 <!-- Contenido post -->
 # Explicación
