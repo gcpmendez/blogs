@@ -70,7 +70,7 @@ h6 {
 # <img src="./../static/markdown.png" alt="Drawing" style="width: 170px;"/>
 
 <!-- Contenido post -->
-# Explicación
+# Contenido
 Empleamos el carácter mayor que `>` para crear **bloques de cita**. En la siguiente tabla podemos ver las opciones para crearlos:
 
 

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Tablas
+title: RSS 
 categories:
 - blog
 tags:
-- Markdown
+- Jekyll
 ---
 
 <!-- Estilo CSS del post-->
@@ -75,4 +75,4 @@ h6 {
 
 <!-- Contenido post -->
 # Contenido
-En construccion
+http://joelglovier.com/writing/rss-for-jekyll

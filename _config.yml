@@ -1,3 +1,5 @@
+name: Blog personal
+description: Blog personal
 url: https://gcpmendez.github.io/
 baseurl: ""
 permalink: /:title/

@@ -74,7 +74,7 @@ h6 {
 # <img src="./../static/markdown.png" alt="Drawing" style="width: 170px;"/>
 
 <!-- Contenido post -->
-# Explicación
+# Contenido
 Empleamos el carácter almohadilla `#` para crear las cabeceras en **Markdown**. En la siguiente tabla se pueden ver como vamos añadiendo una almohadilla por cada nivel existente:
 
 

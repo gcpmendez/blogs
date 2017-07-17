@@ -80,7 +80,7 @@ h6 {
 # <img src="./../static/markdown.png" alt="Drawing" style="width: 170px;"/>
 
 <!-- Contenido post -->
-# Explicación
+# Contenido
 Existen dos maneras de crear **enlaces** en **Markdown**, *en línea* y *referenciado*. En ambos estilos el texto del enlace irá delimitado por corchetes `[]`. Podemos ver en la siguiente tabla la creación de este tipo de enlaces:
 
 
