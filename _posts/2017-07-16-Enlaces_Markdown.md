@@ -30,7 +30,6 @@ tr:nth-child(even) {
     background-color: rgba(238, 238, 238, 0.57);
 }
 td:first-child {
-    text-align: center;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -69,6 +68,12 @@ h6 {
   font-size: 0.67em;
   font-weight: normal;
 }
+
+.f {
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.67em;
+    color: #333;
+}
 </style>
 
 <!-- Imagen Markdown -->
@@ -76,86 +81,47 @@ h6 {
 
 <!-- Contenido post -->
 # Explicación
-Empleamos el carácter almohadilla `#` para crear las cabeceras en **Markdown**. En la siguiente tabla se pueden ver como vamos añadiendo una almohadilla por cada nivel existente:
+Existen dos maneras de crear **enlaces** en **Markdown**, *en línea* y *referenciado*. En ambos estilos el texto del enlace irá delimitado por corchetes `[]`. Podemos ver en la siguiente tabla la creación de este tipo de enlaces:
 
 
 <table>
   <tr>
-    <th>Etiqueta HTML</th>
     <th>Sintaxis Markdown</th>
     <th>Salida HTML</th>
   </tr>
   <tr>
-    <td>H1</td>
-      <td id="h1"># Esto es un H1</td>
-        <td><h1>Esto es un H1</h1></td>
+    <td>[Enlace con título](http://gcpmendez.github.io "Título del enlace")</td>
+    <td><a href="http://gcpmendez.github.io" title="Título del enlace">Enlace con título</a></td>
   </tr>
-   <tr>
-    <td>H2</td>
-      <td>## Esto es un H2</td>
-        <td><h2>Esto es un H2</h2></td>
+  <tr>
+    <td>[Enlace sin título](http://gcpmendez.github.io)</td>
+    <td><a href="http://gcpmendez.github.io">Enlace sin título</a></td>
   </tr>
-   <tr>
-    <td>H3</td>
-      <td>### Esto es un H3</td>
-        <td><h3>Esto es un H3</h3></td>
-  </tr>
-    <tr>
-    <td>H4</td>
-      <td>#### Esto es un H4</td>
-        <td><h4>Esto es un H4</h4></td>
-  </tr>
-     <tr>
-    <td>H5</td>
-      <td>##### Esto es un H5</td>
-        <td><h5>Esto es un H5</h5></td>
-  </tr>
-     <tr>
-    <td>H6</td>
-      <td>###### Esto es un H6</td>
-        <td><h6>Esto es un H6</h6></td>
+  <tr>
+    <td>[Enlace 1][1], [Enlace 2][2], [Enlace 3][3] <br/><br/>
+
+ [1]: http://gcpmendez.github.io/archivos <br/>
+ [2]: http://gcpmendez.github.io/archivos "Archivos" <br/>
+ [3]: http://gcpmendez.github.io/
+ </td> 
+    <td><a href="http://gcpmendez.github.io/archivos">Enlace 1</a>, <a href="http://gcpmendez.github.io">Enlace 2</a>, <a href="http://gcpmendez.github.io">Enlace 3</a></td>
   </tr>
 </table>
 
 <br/>
 
 > **Información:**
-> También puedes cerrar las cabeceras con el mismo número de almohadillas, por ejemplo escribiendo `### Esto es un H3 ###`. Pero la única finalidad de esto es un **motivo puramente estético**.
+>Las siguientes tres definiciones de enlaces son equivalentes:  
+><span class="f">[foo]: http://example.com/  "Optional Title Here"</span><br/>
+><span class="f">[foo]: http://example.com/  'Optional Title Here'</span><br/>
+><span class="f">[foo]: http://example.com/  (Optional Title Here)</span><br/>
 
 
 
-Existe otra manera de crear los dos primeros niveles de las cabeceras como podemos ver en la siguiente tabla:
-
-<table>
-  <tr>
-    <th>Etiqueta HTML</th>
-    <th>Sintaxis Markdown</th>
-    <th>Salida HTML</th>
-  </tr>
-  <tr>
-    <td>H1</td>
-      <td id="h1">Esto es un H1 <br> 
-      =============</td>
-        <td><h1>Esto es un H1</h1></td>
-  </tr>
-   <tr>
-    <td>H2</td>
-      <td>Esto es un H2   <br>    
-      -------</td>
-        <td><h2>Esto es un H2</h2></td>
-  </tr>
-
- 
-
-</table>
-
-<br/>
-
-> **Información:**
-> No existe un número concreto de caracteres `=`'s o `-`'s que necesites escribir para que esto funcione, bastaría simplemente con uno.
-
-
-
+> El **enlace implícito** nos permite *omitir el nombre del enlace* en el caso en que el nombre del enlace sea el mismo que el usado como nombre. En este caso solo debes usar un conjunto vacio de corchetes `[]`. Por ejemplo: en enlace con la palabra "Google" referenciando el sitio web google.com se podría escribir de la siguiente manera:  
+> <span class="f">[Google][]</span><br/><br/>
+>Y entonces definimos en enlace como sigue:  
+><span class="f">[Google]: http://google.com/</span><br/>
 
 <br/>
 
