@@ -40,7 +40,7 @@
 
 - name: Markdown
   desc: |
-    Lenguaje de marcado ligero creado que trata de conseguir la máxima legibilidad y facilidad de publicación tanto en su forma de entrada como de salida.
+    Lenguaje de marcado ligero que trata de conseguir la máxima legibilidad y facilidad de publicación tanto en su forma de entrada como de salida.
   tag_name: Markdown
 
 - name: Git

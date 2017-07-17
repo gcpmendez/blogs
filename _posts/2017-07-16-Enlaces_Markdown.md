@@ -118,7 +118,7 @@ Existen dos maneras de crear **enlaces** en **Markdown**, *en línea* y *referen
 
 
 
-> El **enlace implícito** nos permite *omitir el nombre del enlace* en el caso en que el nombre del enlace sea el mismo que el usado como nombre. En este caso solo debes usar un conjunto vacio de corchetes `[]`. Por ejemplo: en enlace con la palabra "Google" referenciando el sitio web google.com se podría escribir de la siguiente manera:  
+> **Información:** El **enlace implícito** nos permite *omitir el nombre del enlace* en el caso en que el nombre del enlace sea el mismo que el usado como nombre. En este caso solo debes usar un conjunto vacio de corchetes `[]`. Por ejemplo: en enlace con la palabra "Google" referenciando el sitio web google.com se podría escribir de la siguiente manera:  
 > <span class="f">[Google][]</span><br/><br/>
 >Y entonces definimos en enlace como sigue:  
 ><span class="f">[Google]: http://google.com/</span><br/>
