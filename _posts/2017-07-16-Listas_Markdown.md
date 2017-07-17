@@ -115,12 +115,50 @@ Existen dos tipos de **listas** en **Markdown**, *ordenadas y desordenadas*. Par
       </td>
   </tr>
   <tr>
-      <td>### Esto es un H3</td>
-      <td><h3>Esto es un H3</h3></td>
+      <td>
+          Se pueden emplear también + y - en vez de *<br/>
+          <br/>
+          * Un elemento de la lista<br/>
+          + Otro elemento de la lista<br/>
+          - El tercer elemento de la lista
+      </td>
+      <td>
+        Se pueden emplear también + y - en vez de *<br/>
+        <br/>
+        <ul class="b">
+          <li>Un elemento de la lista</li>
+          <li>Otro elemento de la lista</li>
+          <li>El tercer elemento de la lista</li>
+        </ul>
+      </td>
   </tr>
   <tr>
-      <td>#### Esto es un H4</td>
-      <td><h4>Esto es un H4</h4></td>
+      <td>
+      Se pueden mezclar distintos tipos de listas y anidar unas dentro de otras.<br/>
+      <br/>
+      1. Esto es una lista ordenada<br/>
+      2. Segundo elemento de la lista ordenada<br/>
+        <span style="padding-left:2em">1. Esta es una lista ordenada anidada dentro de otra</span><br/>
+          <span style="padding-left:4em">* Lista desordenada anidada a tercer nivel</span><br/>
+          <span style="padding-left:4em">* Segundo elemento de esta lista</span><br/>
+        <span style="padding-left:2em">2. Este es el segundo elemento de la lista ordenada anidada</span>
+      </td>
+      <td>
+      Se pueden mezclar distintos tipos de listas y anidar unas dentro de otras.<br/>
+      <br/>
+      <ol>
+        <li>Esto es una lista ordenada</li>
+        <li>Segundo elemento de la lista ordenada</li>
+        <ol>
+          <li>Esta es una lista ordenada anidada dentro de otra</li>
+          <ul class="b">
+            <li>Lista desordenada anidada a tercer nivel</li>
+            <li>Segundo elemento de esta lista</li>
+          </ul>
+          <li>Este es el segundo elemento de la lista ordenada anidada</li>
+        </ol>
+      </ol>
+</td>
   </tr>
 </table>
 

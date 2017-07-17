@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Imágenes
+title: ¿Qué es Angular?
 categories:
 - blog
 tags:
-- Markdown
+- Angular
 ---
+
 
 <!-- Estilo CSS del post-->
 <style>
@@ -23,19 +24,14 @@ td {
 
 th {
     text-align: center;
-    width: 33.3%;
+    width: 50%;
 }
 tr:nth-child(even) {
     background-color: rgba(238, 238, 238, 0.57);
 }
-td:first-child {
-    text-align: center;
-    font-family: 'Inconsolata', monospace;
-}
 
-td:nth-child(2) {
-   
-    font-family: 'Inconsolata', monospace;
+td:first-child {
+   font-family: 'Inconsolata', monospace;
 }
 
 table h1 {
