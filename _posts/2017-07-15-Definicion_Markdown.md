@@ -71,4 +71,40 @@ h6 {
 
 <!-- Contenido post -->
 # Contenido
-En construcción!
+**Markdown** fue creado por *John Gruber* en *2004*. <ins>Su propósito es ser una sintaxis fácil de leer y escribir que se convierta fácilmente a HTML</ins> (y, actualmente, a otros formatos también). Para ello hace uso de caracteres especiales delante y después de las lineas de texto a las que deseas darles formato especial. 
+
+**Markdown** está basado en HTML, <ins>así que cualquier archivo HTML es Markdown
+válido</ins>, eso significa que <ins>podemos usar elementos HTML en Markdown como, por
+ejemplo, el comentario y no serán afectado por un parseador Markdown</ins>. Aún 
+así si creas un elemento HTML en tu archivo Markdown no podrás usar sintaxis
+Markdown dentro de él.
+
+<ins>La implementación de **Markdown** cambia de acuerdo al parseador.</ins>
+
+En resumen podemos decir que HTML añade mucho ruido al texto haciéndolo sumamente difícil de leer, especialmente para gente que no esta familiarizada con él. Markdown nos permite escribir en texto sencillo con pocos adornos y lo convierte a HTML automáticamente sin necesidad de aprender un millón de instrucciones de formato.
+
+<br/>
+
+# Sintaxis Markdown
+
+* Block Elements
+  * Paragraphs and Line Breaks
+  * [Cabeceras](/Cabeceras_Markdown/)
+  * [Citas](/Citas_Markdown/)
+  * [Listas](/Listas_Markdown/)
+  * Code Blocks
+  * Horizontal Rules
+* Span Elements
+  * Links
+  * Emphasis
+  * Code
+  * Images
+* Miscellaneous
+  * Backslash Escapes
+  * Automatic Links
+
+<br/>
+
+# Documentación oficial
+
+https://daringfireball.net/projects/markdown/syntax
