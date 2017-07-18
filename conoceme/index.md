@@ -4,7 +4,7 @@ title: Conóceme
 date: "2017-07-10"
 ---
 
-¡Hola!, soy Germán Méndez.
+¡Hola!, soy **Germán Méndez**.
 
 Me gradué en la [Universidad de la laguna (ULL)](http://www.ull.es/) en [Ingeniería Informática](https://www.ull.es/estudios-docencia/grados/ingenieria-informatica/). Valoro sobretodo el desarrollo guiado por pruebas y el diseño de los elementos.
 
