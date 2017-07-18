@@ -71,7 +71,7 @@ h6 {
 
 <!-- Contenido post -->
 # Contenido
-Empleamos el carácter mayor que `>` para crear **bloques de cita**. En la siguiente tabla podemos ver las opciones para crearlos:
+Empleamos el carácter mayor que `>` para crear **Citas**. En la siguiente tabla podemos ver las opciones para crearlos:
 
 
 <table>

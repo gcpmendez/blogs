@@ -87,8 +87,8 @@ En resumen podemos decir que HTML añade mucho ruido al texto haciéndolo sumame
 
 # Sintaxis Markdown
 
-* Block Elements
-  * Paragraphs and Line Breaks
+* Bloques de elementos
+  * [Párrafos y saltos de línea](/Parrafos_y_saltos_de_linea_Markdown/)
   * [Cabeceras](/Cabeceras_Markdown/)
   * [Citas](/Citas_Markdown/)
   * [Listas](/Listas_Markdown/)
