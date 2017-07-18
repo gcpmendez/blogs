@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Enlaces
-title: Enlaces
 categories:
 - blog
 tags:

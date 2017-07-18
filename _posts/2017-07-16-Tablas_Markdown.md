@@ -5,6 +5,7 @@ categories:
 - blog
 tags:
 - Markdown
+status: notFinished
 ---
 
 <!-- Estilo CSS del post-->
@@ -75,4 +76,3 @@ h6 {
 
 <!-- Contenido post -->
 # Contenido
-En construccion

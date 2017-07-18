@@ -29,7 +29,7 @@ Desde el <ins>{{ day }} de {{ month }} de {{ year }}</ins> he escrito <ins>{{ to
 <ul>
     {% assign date = currentdate %}
   {% endif %}
-  <li {% if post.favorite and post.layout != "writeup" %}class="favorite"{% endif %}>
+  <li {% case post.status %}{% when 'favorite' %}class="favorite"{% when 'notFinished' %}class="notFinished"{% endcase %}>
     <a href="{{ post.url }}">{{ post.title }}{% if post.layout == "writeup" %} (Book Writeup){% endif %}</a>
   </li>
   {% if forloop.last %}</ul>{% endif %}

@@ -36,12 +36,12 @@ description: Blog personal que intento mantener actualizado
     <ul >
     {% for post in site.tags[firstSerie.tag_name] %}
       {% if forloop.first %}
-        <li id="updated"{% if post.favorite %}class="favorite"{% endif %}>
+        <li id="updated"{% case post.status %}{% when 'favorite' %}class="favorite"{% when 'notFinished' %}class="notFinished"{% endcase %}>
           <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
       {% endif %}
       {% unless forloop.first %}
-        <li {% if post.favorite %}class="favorite"{% endif %}>
+        <li {% case post.status %}{% when 'favorite' %}class="favorite"{% when 'notFinished' %}class="notFinished"{% endcase %}>
           <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
       {% endunless %}
@@ -57,7 +57,7 @@ description: Blog personal que intento mantener actualizado
         <p>{{ series.desc }}</p>
         <ul>
         {% for post in site.tags[series.tag_name]  %}
-          <li {% if post.favorite %}class="favorite"{% endif %}>
+          <li {% case post.status %}{% when "favorite" %}class="favorite"{% when "notFinished" %}class="notFinished"{% else %}{% endcase %}>
             <a href="{{ post.url }}">{{ post.title }}</a>
           </li>
         {% endfor %}

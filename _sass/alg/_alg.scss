@@ -305,6 +305,10 @@ article {
     &.favorite {
       font-weight: 700;
     }
+
+    &.notFinished {
+      color: #e66100;
+    }
   }
 
 }

@@ -5,6 +5,7 @@ categories:
 - blog
 tags:
 - Markdown
+status: favorite
 ---
 
 
