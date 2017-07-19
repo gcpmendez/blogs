@@ -82,9 +82,36 @@ Claramente resulta bastante difícil idear una sintaxis "natural" para poner im�
 
 La sintaxis de imagen en línea se muestra así:
 
-![Alt text](/path/to/img.jpg)
+
 
 ![Alt text](/path/to/img.jpg "Optional title")
+
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>![Alt text](/path/to/img.jpg)</td>
+    <td><a href="http://gcpmendez.github.io" title="Título del enlace">Enlace con título</a></td>
+  </tr>
+  <tr>
+    <td>![Alt text](/path/to/img.jpg "Optional title")</td>
+    <td><a href="http://gcpmendez.github.io">Enlace sin título</a></td>
+  </tr>
+  <tr>
+    <td>[Enlace 1][1], [Enlace 2][2], [Enlace 3][3] <br/><br/>
+
+ [1]: http://gcpmendez.github.io/archivos <br/>
+ [2]: http://gcpmendez.github.io/archivos "Archivos" <br/>
+ [3]: http://gcpmendez.github.io/
+ </td> 
+    <td><a href="http://gcpmendez.github.io/archivos">Enlace 1</a>, <a href="http://gcpmendez.github.io">Enlace 2</a>, <a href="http://gcpmendez.github.io">Enlace 3</a></td>
+  </tr>
+</table>
+
+
+
 Esto es:
 
 una etiqueta de exclamación: !;
