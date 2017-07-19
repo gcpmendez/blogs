@@ -76,4 +76,24 @@ h6 {
 
 <!-- Contenido post -->
 # Contenido
-En construcción!
+Claramente resulta bastante difícil idear una sintaxis "natural" para poner imágenes en un formato de documento de texto.
+
+**Markdown** utiliza una sintaxis de imagen que se asemeja a la sintaxis de los enlaces, permitiendo dos estilos: *en línea y referencia*
+
+La sintaxis de imagen en línea se muestra así:
+
+![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg "Optional title")
+Esto es:
+
+una etiqueta de exclamación: !;
+seguida por un par de corchetes, que contienen el texto de la atributo alt de la imagen;
+seguido por un par de paréntesis, que contienen la URL o la trayectoria a la imagen, y un atributo opcional de título (title) entre apóstrofes
+La sintaxis de la imagen de estilo Referencia tiene esta apariencia:
+
+![Alt text][id]
+Donde "id" es el nombre la "identificación" de una referencia definida de la imagen. Se definen las referencias de la imagen usando la sintaxis idéntica a las referencias de los enlaces:
+
+[id]: url/to/image  "Optional title attribute"
+De momento, Markdown carece de sintaxis para especificar las dimensiones de una imagen; si esto es importante para usted, puede utilizar las etiquetas normales < img > de HTML.

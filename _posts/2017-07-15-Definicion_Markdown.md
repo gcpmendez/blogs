@@ -93,16 +93,16 @@ En resumen podemos decir que HTML añade mucho ruido al texto haciéndolo sumame
   * [Cabeceras](/Cabeceras_Markdown/)
   * [Citas](/Citas_Markdown/)
   * [Listas](/Listas_Markdown/)
-  * Code Blocks
-  * Horizontal Rules
+  * Bloques de código
+  * Reglas horizontales
 * Span Elements
-  * Links
-  * Emphasis
-  * Code
-  * Images
-* Miscellaneous
+  * [Enlaces](/Enlaces_Markdown/)
+  * Énfasis
+  * Código
+  * [Imágenes](/Imagenes_Markdown/)
+* Miscelánea
   * Backslash Escapes
-  * Automatic Links
+  * Enlaces automáticos
 
 <br/>
 
