@@ -5,6 +5,7 @@ categories:
 - blog
 tags:
 - Git
+status: notFinished
 ---
 
 <!-- Estilo CSS del post-->
@@ -74,5 +75,4 @@ h6 {
 # <img src="./../static/git.png" alt="Drawing" style="width: 170px;"/>
 
 <!-- Contenido post -->
-# Explicación
-En construcción!
+# Contenido

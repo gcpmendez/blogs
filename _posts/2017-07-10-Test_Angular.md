@@ -35,6 +35,7 @@ questions: [
       correctAnswer: "d"
     }
   ]
+status: notFinished
 ---
 
 

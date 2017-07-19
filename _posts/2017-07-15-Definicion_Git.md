@@ -5,6 +5,7 @@ categories:
 - blog
 tags:
 - Git
+status: notFinished
 ---
 
 
@@ -71,4 +72,4 @@ h6 {
 
 <!-- Contenido post -->
 # Contenido
-En construcción!
+

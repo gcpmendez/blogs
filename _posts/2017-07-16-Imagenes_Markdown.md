@@ -5,6 +5,7 @@ categories:
 - blog
 tags:
 - Markdown
+status: notFinished
 ---
 
 <!-- Estilo CSS del post-->
