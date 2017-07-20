@@ -20,7 +20,7 @@ Siempre me encuentro aprendiendo y tratando de mejorar mi arte; Considero que es
   
 ## Contáctame
 
-Puedes escribirme a [gcpmendez@gmail.com][email] or [@gcpmendez][twitter]. 
+Puedes escribirme a [gcpmendez@gmail.com][email]. 
 
 
 
