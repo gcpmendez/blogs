@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tablas
+title: Bloques de código
 categories:
 - blog
 tags:

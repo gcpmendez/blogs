@@ -88,24 +88,24 @@ En resumen podemos decir que HTML añade mucho ruido al texto haciéndolo sumame
 
 # Sintaxis Markdown
 
-* Bloques de elementos
+* Elementos de tipo **Bloque**
   * [Párrafos y saltos de línea](/Parrafos_y_saltos_de_linea_Markdown/)
   * [Cabeceras](/Cabeceras_Markdown/)
   * [Citas](/Citas_Markdown/)
   * [Listas](/Listas_Markdown/)
-  * Bloques de código
-  * Reglas horizontales
-* Span Elements
+  * [Bloques de código](/Bloques_de_codigo_Markdown/)
+  * [Reglas horizontales](/Reglas_horizontales_Markdown/)
+* Elementos de tipo **Span**
   * [Enlaces](/Enlaces_Markdown/)
-  * Énfasis
-  * Código
+  * [Énfasis](/Enfasis_Markdown/)
+  * [Código](/Codigo_Markdown/)
   * [Imágenes](/Imagenes_Markdown/)
 * Miscelánea
   * Backslash Escapes
-  * Enlaces automáticos
+  * [Enlaces automáticos](/Enlaces_automaticos_Markdown/)
 
 <br/>
 
 # Documentación oficial
 
-https://daringfireball.net/projects/markdown/syntax
+Enlace a la documentación oficial sobre **Markdown**: <a href="https://daringfireball.net/projects/markdown/syntax/" target="_blank">daringFireball</a>

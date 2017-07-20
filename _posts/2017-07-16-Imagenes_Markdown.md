@@ -5,7 +5,6 @@ categories:
 - blog
 tags:
 - Markdown
-status: notFinished
 ---
 
 <!-- Estilo CSS del post-->
@@ -30,7 +29,6 @@ tr:nth-child(even) {
     background-color: rgba(238, 238, 238, 0.57);
 }
 td:first-child {
-    text-align: center;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -76,15 +74,11 @@ h6 {
 
 <!-- Contenido post -->
 # Contenido
-Claramente resulta bastante difícil idear una sintaxis "natural" para poner imágenes en un formato de documento de texto.
+Claramente resulta bastante difícil idear una sintaxis "natural" para poner **imágenes** en un formato de documento de texto.
 
-**Markdown** utiliza una sintaxis de imagen que se asemeja a la sintaxis de los enlaces, permitiendo dos estilos: *en línea y referencia*
+**Markdown** utiliza una sintaxis de **imagen** que se asemeja a la sintaxis de los **enlaces**. <ins>Sólo deberás añadir un símbolo de exclamación `!` al principio y el enlace no será otro que la *ubicación de la imagen*</ins>. Permite al igual que el **enlace** dos estilos: *en línea y referencia*
 
-La sintaxis de imagen en línea se muestra así:
-
-
-
-![Alt text](/path/to/img.jpg "Optional title")
+La sintaxis de **imagen** en estilo *en línea* es la siguiente:
 
 <table>
   <tr>
@@ -93,34 +87,34 @@ La sintaxis de imagen en línea se muestra así:
   </tr>
   <tr>
     <td>![Alt text](/path/to/img.jpg)</td>
-    <td><a href="http://gcpmendez.github.io" title="Título del enlace">Enlace con título</a></td>
+    <td><img src="./../static/markdownExample.png" alt="Alt text" style="width: 170px;"/></td>
   </tr>
   <tr>
     <td>![Alt text](/path/to/img.jpg "Optional title")</td>
-    <td><a href="http://gcpmendez.github.io">Enlace sin título</a></td>
-  </tr>
-  <tr>
-    <td>[Enlace 1][1], [Enlace 2][2], [Enlace 3][3] <br/><br/>
-
- [1]: http://gcpmendez.github.io/archivos <br/>
- [2]: http://gcpmendez.github.io/archivos "Archivos" <br/>
- [3]: http://gcpmendez.github.io/
- </td> 
-    <td><a href="http://gcpmendez.github.io/archivos">Enlace 1</a>, <a href="http://gcpmendez.github.io">Enlace 2</a>, <a href="http://gcpmendez.github.io">Enlace 3</a></td>
+    <td><img src="./../static/markdownExample.png" alt="Alt text" style="width: 170px;" title="Optional title"/></td>
   </tr>
 </table>
 
+<br/>
+La sintaxis de **imagen** con estilo *referencia* es la siguiente:
 
 
-Esto es:
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>
+    ![Alt text][id]<br/>
+    [id]: url/to/image  "Optional title attribute"
+    </td>
+    <td><img src="./../static/markdownExample.png" alt="Alt text" title="Optional title attribute" style="width: 170px;"/></td>
+  </tr>
+</table>
 
-una etiqueta de exclamación: !;
-seguida por un par de corchetes, que contienen el texto de la atributo alt de la imagen;
-seguido por un par de paréntesis, que contienen la URL o la trayectoria a la imagen, y un atributo opcional de título (title) entre apóstrofes
-La sintaxis de la imagen de estilo Referencia tiene esta apariencia:
+<br/>
 
-![Alt text][id]
-Donde "id" es el nombre la "identificación" de una referencia definida de la imagen. Se definen las referencias de la imagen usando la sintaxis idéntica a las referencias de los enlaces:
+<ins>Se definen las referencias de la imagen usando una sintaxis idéntica a las referencias de los enlaces.</ins>  
 
-[id]: url/to/image  "Optional title attribute"
-De momento, Markdown carece de sintaxis para especificar las dimensiones de una imagen; si esto es importante para usted, puede utilizar las etiquetas normales < img > de HTML.
+>**Información:** por el momento, **Markdown** *carece de sintaxis para especificar las dimensiones de una imagen*; si esto es importante para usted, puede utilizar las etiquetas normales `<img></img>` de HTML.
