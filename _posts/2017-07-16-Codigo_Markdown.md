@@ -19,6 +19,7 @@ table {
 }
 
 td {
+  vertical-align: baseline;
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -72,38 +73,97 @@ h6 {
 
 <!-- Contenido post -->
 # Contenido
-To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:
+Para indicar en **Markdown** una etiqueta de código envolvemos el texto con el símbolo de **acento grave** `` ` ``. A diferencia de un **bloque de código** preformateado, una etiqueta de código indica el código dentro de un párrafo normal. Veamos un ejemplo:
 
-Use the `printf()` function.
-will produce:
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>
+    Use the `printf()` function.
+    </td>
+    <td>
+    <p>Use the <code>printf()</code> function.</p>
+    </td>
+  </tr>  
+</table>
 
-<p>Use the <code>printf()</code> function.</p>
-To include a literal backtick character within a code span, you can use multiple backticks as the opening and closing delimiters:
+<br/>
+Para incluir un símbolo de **acento grave literal** dentro de un intervalo de código puedes usar múltiples acentos graves como delimitadores al comienzo y al final, lo cual enseñamos a continuación:
 
-``There is a literal backtick (`) here.``
-which will produce this:
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>
+    ``Hay un acento grave literal (`) aquí.``
+    </td>
+    <td>
+    <p><code>Hay un acento grave literal (`) aquí.</code></p>
+    </td>
+  </tr>  
+</table>
 
-<p><code>There is a literal backtick (`) here.</code></p>
-The backtick delimiters surrounding a code span may include spaces — one after the opening, one before the closing. This allows you to place literal backtick characters at the beginning or end of a code span:
 
-A single backtick in a code span: `` ` ``
 
-A backtick-delimited string in a code span: `` `foo` ``
-will produce:
+<br/>
+<ins>Los delimitadores del **acento grave** que rodean un intervalo de código pueden incluir espacios, uno después de la apertura y uno antes del cierre.</ins> Esto le permite colocar caracteres literales de acento grave al principio o al final de un intervalo de código:
 
-<p>A single backtick in a code span: <code>`</code></p>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>
+    Un simple acento grave en un intervalo de código: `` ` ``
+    </td>
+    <td>
+    <p>Un simple acento grave en un intervalo de código: <code>`</code></p>
+    </td>
+  </tr>  
+  <tr>
+    <td>
+    Una cadena delimitada por acentos graves en un intervalo de código: `` `foo` ``
+    </td>
+    <td>
+    <p>Una cadena delimitada por acentos graves en un intervalo de código: <code>`foo`</code></p>
+    </td>
+  </tr> 
+</table>
 
-<p>A backtick-delimited string in a code span: <code>`foo`</code></p>
-With a code span, ampersands and angle brackets are encoded as HTML entities automatically, which makes it easy to include example HTML tags. Markdown will turn this:
+<br/>
 
-Please don't use any `<blink>` tags.
-into:
 
-<p>Please don't use any <code>&lt;blink&gt;</code> tags.</p>
-You can write this:
+En un intervalo de código, los signos ampersand y los corchetesangulares se codifican automáticamente como entidades HTML, lo que facilita incluir ejemplos de etiquetas html. Lo vemos a continuación:
 
-`&#8212;` is the decimal-encoded equivalent of `&mdash;`.
-to produce:
 
-<p><code>&amp;#8212;</code> is the decimal-encoded
-equivalent of <code>&amp;mdash;</code>.</p>
+
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>
+    Please don't use any `<blink>` tags.
+    </td>
+    <td>
+    <p>Please don't use any <code>&lt;blink&gt;</code> tags.</p>
+    </td>
+  </tr>  
+  <tr>
+    <td>
+    `&#8212;` is the decimal-encoded equivalent of `&mdash;`.
+    </td>
+    <td>
+    <p><code>&amp;#8212;</code> is the decimal-encoded equivalent of <code>&amp;mdash;</code>.</p>
+    </td>
+  </tr> 
+</table>
+
+
