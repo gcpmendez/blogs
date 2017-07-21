@@ -5,7 +5,6 @@ categories:
 - blog
 tags:
 - Markdown
-status: notFinished
 ---
 
 <!-- Estilo CSS del post-->
@@ -30,7 +29,6 @@ tr:nth-child(even) {
     background-color: rgba(238, 238, 238, 0.57);
 }
 td:first-child {
-    text-align: center;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -76,3 +74,55 @@ h6 {
 
 <!-- Contenido post -->
 # Contenido
+**Markdown** usa los símbolos asterisco `*` y guion bajo `_` como indicadores de **énfasis**. <ins>El texto envuelto con un `*` o `_` será envuelto con una etiqueta HTML `<em>`; y con dobles `*’s` o `_’s` será envuelto con una etiqueta HTML `<strong>`,</ins> como vemos en la siguiente tabla:
+
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>
+    *single asterisks*<br/><br/>
+    _single underscores_<br/><br/>
+    **double asterisks**<br/><br/>
+    __double underscores__
+    </td>
+    <td>
+    <em>single asterisks</em><br/><br/>
+    <em>single underscores</em><br/><br/>
+    <strong>double asterisks</strong><br/><br/>
+    <strong>double underscores</strong>
+    </td>
+  </tr>  
+</table>
+
+
+
+<br/>
+
+
+
+
+Puedes usar el estilo que prefieras, **la unica restricción es que se debe usar el mismo símbolo para abrir y cerrar el énfasis.**
+
+
+> Información: el **énfasis** puede ser usado en medio de una palabra: en*mediodeuna*palabra. Pero si  rodea un `*` o `_` con espacios ese será mostrado como un asterisco literal o un guion bajo.
+
+Para producir un asterisco literal o un guion bajo literal en una posición donde ha sido usado para delimitar un énfasis deberemos escaparlos como vemos a continuación:
+
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>
+    \*this text is surrounded by literal asterisks\*
+    </td>
+    <td>
+   *this text is surrounded by literal asterisks*
+    </td>
+  </tr>  
+</table>
+

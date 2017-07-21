@@ -7,6 +7,7 @@ tags:
 - Markdown
 ---
 
+
 <!-- Estilo CSS del post-->
 <style>
 table {
