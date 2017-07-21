@@ -5,7 +5,6 @@ categories:
 - blog
 tags:
 - Markdown
-status: notFinished
 ---
 
 <!-- Estilo CSS del post-->
@@ -108,9 +107,8 @@ Para incluir un símbolo de **acento grave literal** dentro de un intervalo de c
   </tr>  
 </table>
 
-
-
 <br/>
+
 <ins>Los delimitadores del **acento grave** que rodean un intervalo de código pueden incluir espacios, uno después de la apertura y uno antes del cierre.</ins> Esto le permite colocar caracteres literales de acento grave al principio o al final de un intervalo de código:
 
 <table>
@@ -138,10 +136,7 @@ Para incluir un símbolo de **acento grave literal** dentro de un intervalo de c
 
 <br/>
 
-
-En un intervalo de código, los signos ampersand y los corchetesangulares se codifican automáticamente como entidades HTML, lo que facilita incluir ejemplos de etiquetas html. Lo vemos a continuación:
-
-
+<ins>En un intervalo de código, los signos ampersand y los corchetes angulares se codifican automáticamente como entidades HTML, lo que facilita incluir ejemplos de etiquetas html</ins>. Lo vemos a continuación:
 
 <table>
   <tr>
