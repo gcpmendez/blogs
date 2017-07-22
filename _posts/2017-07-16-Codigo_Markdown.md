@@ -5,6 +5,7 @@ categories:
 - blog
 tags:
 - Markdown
+comments: true
 ---
 
 <!-- Estilo CSS del post-->
@@ -145,20 +146,19 @@ Para incluir un símbolo de **acento grave literal** dentro de un intervalo de c
   </tr>
   <tr>
     <td>
-    Please don't use any `<blink>` tags.
+    Por favor, no uses la etiqueta `&lt;blink&gt;`.
     </td>
     <td>
-    <p>Please don't use any <code>&lt;blink&gt;</code> tags.</p>
+    <p>Por favor, no uses la etiqueta <code>&lt;blink&gt;</code>.</p>
     </td>
   </tr>  
   <tr>
     <td>
-    `&#8212;` is the decimal-encoded equivalent of `&mdash;`.
+    `&amp;#8212;` es la codificación decimal equivalente de `&amp;mdash;`.
     </td>
     <td>
-    <p><code>&amp;#8212;</code> is the decimal-encoded equivalent of <code>&amp;mdash;</code>.</p>
+      <p><code>&amp;#8212;</code> es la codificación decimal equivalente de <code>&amp;mdash;</code>.</p>
     </td>
   </tr> 
 </table>
-
 
