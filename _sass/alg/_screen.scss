@@ -61,9 +61,13 @@
 }
 
 .icon-twitter {
-  &:before {
-    content: $icon-twitter;
-  }
+    &:before {
+        content: $icon-twitter;
+    }
+
+    &:hover {
+        color: #00aced;
+    }
 }
 
 .icon-facebook {
@@ -73,15 +77,41 @@
 }
 
 .icon-linkedin {
+    &:before {
+        content: $icon-linkedin;
+    }
+
+    &:hover {
+        color: #0073a4;
+    }
+}
+
+.icon-instagram {
   &:before {
-    content: $icon-linkedin;
+    content: $icon-instagram;
   }
+&:hover {
+      color: #375989;
+}
 }
 
 .icon-github {
+    &:before {
+        content: $icon-github;
+    }
+
+    &:hover {
+         color: #343434;
+    }
+}
+
+.icon-mail {
   &:before {
-    content: $icon-github;
+    content: $icon-mail;
   }
+    &:hover {
+         color: #f39c12;
+    }
 }
 
 /* ==========================================================================
@@ -179,43 +209,25 @@
 }
 
 .footer {
-    /*margin: 2rem 0 0 0;*/
-    padding: 2rem 0;
-    /*border-top: #827e7e 1px solid;*/
+    color: #999;
     text-align: center;
-    font-size: .75em;
-    font-weight: 500;
-    letter-spacing: .2em;
-    text-transform: uppercase;
+    margin: 2rem;
 
-    P {
-        margin: 1rem 0 0 0;
-        font-size: 11px;
-
-        a {
-            text-decoration: underline;
-        }
+    a {
+        color: #999;
+        padding: 10px;
+        text-decoration: none;
     }
+    
+   p {
+       font-family: "Varela Round", sans-serif;
+       display: block;
+    margin-top: 3px;
+    margin-bottom: 1rem;
+    color: #9a9a9a;
 
-    span:first-child {
-       margin-top: -10px;
-    margin-left: 30px;
-    position: absolute;
-
-        a {
-            text-decoration: underline;
-        }
-    }
-
-    span:last-child {
-        margin-top: -10px;
-        float: right;
-        margin-right: 17px;
-
-        a {
-            text-decoration: underline;
-        }
-    }
+    font-size: 0.8rem;
+   }
 
 }
 
@@ -224,10 +236,6 @@
 .site-footer a {
     /*text-decoration: underline;*/
     color: rgba(51, 51, 51, 0.4);
-}
-
-.site-footer a:hover {
-    color: blue;
 }
 
 .poweredby .icon-ghost {
