@@ -41,13 +41,12 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 17px;
   line-height: 1;
 
   /* Better Font Rendering =========== */
@@ -60,42 +59,30 @@
     content: $icon-rss;
   }
 }
-.icon-feed {
-  &:before {
-    content: $icon-feed;
-  }
-}
-.icon-atom {
-  &:before {
-    content: $icon-atom;
-  }
-}
+
 .icon-twitter {
   &:before {
     content: $icon-twitter;
   }
 }
-.icon-social {
-  &:before {
-    content: $icon-social;
-  }
-}
+
 .icon-facebook {
   &:before {
     content: $icon-facebook;
   }
 }
-.icon-social2 {
-  &:before {
-    content: $icon-social2;
-  }
-}
+
 .icon-linkedin {
   &:before {
     content: $icon-linkedin;
   }
 }
 
+.icon-github {
+  &:before {
+    content: $icon-github;
+  }
+}
 
 /* ==========================================================================
    5. Single Post - When you click on an individual post
@@ -192,13 +179,23 @@
 }
 
 .footer {
-    margin: 2rem 0 0 0;
+    /*margin: 2rem 0 0 0;*/
     padding: 2rem 0;
     /*border-top: #827e7e 1px solid;*/
+    text-align: center;
     font-size: .75em;
     font-weight: 500;
     letter-spacing: .2em;
     text-transform: uppercase;
+
+    P {
+        margin: 1rem 0 0 0;
+        font-size: 11px;
+
+        a {
+            text-decoration: underline;
+        }
+    }
 
     span:first-child {
        margin-top: -10px;
@@ -213,7 +210,7 @@
     span:last-child {
         margin-top: -10px;
         float: right;
-        margin-right: 30px;
+        margin-right: 17px;
 
         a {
             text-decoration: underline;
@@ -226,7 +223,7 @@
 
 .site-footer a {
     /*text-decoration: underline;*/
-    color: #000;
+    color: rgba(51, 51, 51, 0.4);
 }
 
 .site-footer a:hover {
