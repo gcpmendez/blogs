@@ -220,13 +220,16 @@
     }
     
    p {
-       font-family: "Varela Round", sans-serif;
-       display: block;
-    margin-top: 3px;
-    margin-bottom: 1rem;
-    color: #9a9a9a;
+        font-family: "Varela Round", sans-serif;
+        display: block;
+        margin-top: 3px;
+        margin-bottom: 1rem;
+        color: #9a9a9a;
+        font-size: 0.8rem;
 
-    font-size: 0.8rem;
+        a:hover {
+            color: black;
+        }
    }
 
 }
