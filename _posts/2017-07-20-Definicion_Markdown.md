@@ -101,7 +101,7 @@ En resumen podemos decir que HTML añade mucho ruido al texto haciéndolo sumame
   * [Código](/Codigo_Markdown/)
   * [Imágenes](/Imagenes_Markdown/)
 * Miscelánea
-  * Backslash Escapes
+  * [Encapes de barra invertida](/Escapes_de_barra_invertida_Markdown/)
   * [Enlaces automáticos](/Enlaces_automaticos_Markdown/)
 
 <br/>
