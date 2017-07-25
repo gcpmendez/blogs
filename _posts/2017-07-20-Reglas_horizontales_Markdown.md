@@ -70,6 +70,10 @@ h6 {
   font-size: 0.67em;
   font-weight: normal;
 }
+
+hr {
+      border-bottom: 1px solid #000;
+}
 </style>
 
 <!-- Imagen Markdown -->
@@ -77,3 +81,27 @@ h6 {
 
 <!-- Contenido post -->
 # Contenido
+Puedes crear una etiqueta de **regla horizontal** `<hr />` <ins>colocando tres o más guiones, guiones bajos o asteriscos</ins>. Si lo desea puede utilizar espacios entre los guiones o asteriscos. Cada una de las líneas siguientes producirá una regla horizontal:
+
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>* * *</td>
+    <td><hr/></td>
+  </tr>
+  <tr>
+    <td>****</td>
+    <td><hr/></td>
+  </tr>
+    <tr>
+    <td>- - -</td>
+    <td><hr/></td>
+  </tr>
+    <tr>
+    <td>---------------------------------------</td>
+    <td><hr/></td>
+  </tr>
+</table>
