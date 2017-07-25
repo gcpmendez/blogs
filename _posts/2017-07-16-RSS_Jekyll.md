@@ -5,7 +5,6 @@ categories:
 - blog
 tags:
 - Jekyll
-status: notFinished
 ---
 
 <!-- Estilo CSS del post-->
