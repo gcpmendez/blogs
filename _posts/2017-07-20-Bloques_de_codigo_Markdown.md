@@ -133,8 +133,8 @@ Dentro de un **bloque de código**, <ins>los signos ampersand `&` y los corchete
     <th>Salida HTML</th>
   </tr>
   <tr>
-    <td>&lt;div class="footer">
-        &copy; 2004 Foo Corporation
+    <td>&lt;div class="footer"></br>
+        &amp;copy; 2004 Foo Corporation</br>
     &lt;/div></td>
     <td><pre><code>&lt;div class="footer"&gt;
     &amp;copy; 2004 Foo Corporation
