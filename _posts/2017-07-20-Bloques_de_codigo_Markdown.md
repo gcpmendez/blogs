@@ -5,7 +5,6 @@ categories:
 - blog
 tags:
 - Markdown
-status: notFinished
 ---
 
 <!-- Estilo CSS del post-->
@@ -31,7 +30,6 @@ tr:nth-child(even) {
     background-color: rgba(238, 238, 238, 0.57);
 }
 td:first-child {
-    text-align: center;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -77,45 +75,75 @@ h6 {
 
 <!-- Contenido post -->
 # Contenido
-Pre-formatted code blocks are used for writing about programming or markup source code. Rather than forming normal paragraphs, the lines of a code block are interpreted literally. Markdown wraps a code block in both <pre> and <code> tags.
+Los **bloques de código** pre-formateados se usan para escribir sobre el código fuente de programación o marcado. En lugar de formar párrafos normales, las líneas de un bloque de código se interpretan literalmente. Markdown envuelve un bloque de código con las etiquetas `<pre>` y `<code>`. 
 
-To produce a code block in Markdown, simply indent every line of the block by at least 4 spaces or 1 tab. For example, given this input:
+Para producir un **bloque de código** en **Markdown**, <ins>simplemente indente cada línea del bloque por al menos 4 espacios o 1 tabulación</ins>. Por ejemplo, dada esta entrada:
 
-This is a normal paragraph:
 
-    This is a code block.
-Markdown will generate:
 
-<p>This is a normal paragraph:</p>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>This is a normal paragraph:<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;This is a code block.</td>
+    <td><p>This is a normal paragraph:</p><pre><code>This is a code block.
+</code></pre></td>
+  </tr>
+</table>
 
-<pre><code>This is a code block.
-</code></pre>
-One level of indentation — 4 spaces or 1 tab — is removed from each line of the code block. For example, this:
+<br/>
 
-Here is an example of AppleScript:
 
-    tell application "Foo"
-        beep
-    end tell
-will turn into:
+Se quita el primer nivel de identación - 4 espacios o 1 tabulación - de cada linea del bloque de código. Vemos un ejemplo de esto:
 
-<p>Here is an example of AppleScript:</p>
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>Here is an example of AppleScript:<br/>
+<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;tell application "Foo"<br/>
+         &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;beep<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;end tell</td>
+    <td><p>Here is an example of AppleScript:</p>
 
 <pre><code>tell application "Foo"
-    beep
+     beep
 end tell
-</code></pre>
-A code block continues until it reaches a line that is not indented (or the end of the article).
+</code></pre></td>
+  </tr>
+</table>
 
-Within a code block, ampersands (&) and angle brackets (< and >) are automatically converted into HTML entities. This makes it very easy to include example HTML source code using Markdown — just paste it and indent it, and Markdown will handle the hassle of encoding the ampersands and angle brackets. For example, this:
+<br/>
 
-    <div class="footer">
-        &copy; 2004 Foo Corporation
-    </div>
-will turn into:
 
-<pre><code>&lt;div class="footer"&gt;
+> **Información:** un **bloque de código** continúa hasta que alcanza una línea que no está identada (o el final del artículo). 
+
+
+Dentro de un **bloque de código**, <ins>los signos ampersand `&` y los corchetes angulares `<` y `>` se convierten automáticamente en entidades HTML</ins>. Esto hace que sea muy fácil incluir código fuente HTML de ejemplo con Markdown - sólo pegarlo y identarlo, y Markdown se encargará de la molestia de codificar los signos y los corchetes angulares. Veamoslo con un ejemplo:
+
+<table>
+  <tr>
+    <th>Sintaxis Markdown</th>
+    <th>Salida HTML</th>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="footer"><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;copy; 2004 Foo Corporation<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div></td>
+    <td><pre><code>&lt;div class="footer"&gt;
     &amp;copy; 2004 Foo Corporation
 &lt;/div&gt;
-</code></pre>
-Regular Markdown syntax is not processed within code blocks. E.g., asterisks are just literal asterisks within a code block. This means it’s also easy to use Markdown to write about Markdown’s own syntax.
+</code></pre></td>
+  </tr>
+</table>
+
+<br/>
+
+> **Información:** la **sintaxis de Markdown** <ins>no se procesa dentro de los bloques de código</ins>. Por ejemplo, los asteriscos son sólo asteriscos literales dentro de un bloque de código. Esto significa que también es fácil de usar Markdown para escribir sobre la propia sintaxis de Markdown.
+
