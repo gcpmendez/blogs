@@ -4,7 +4,7 @@ title: ¿Qué es HTML?
 categories:
 - blog
 tags:
-- Jekyll
+- HTML
 status: notFinished
 ---
 
