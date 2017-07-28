@@ -47,3 +47,13 @@
   desc: |
     Software de control de versiones diseñado por Linus Torvalds.
   tag_name: Git
+
+- name: Python
+  desc: |
+    Lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, usa tipado dinámico y es multiplataforma.
+  tag_name: Python
+
+- name: Ruby
+  desc: |
+    Lenguaje de programación interpretado, reflexivo y orientado a objetos.
+  tag_name: Ruby
