@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ¿Qué es HTML?
+title: Scripting
 categories:
 - blog
 tags:

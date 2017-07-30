@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ¿Qué es HTML?
+title: Semántica a nivel de texto
 categories:
 - blog
 tags:

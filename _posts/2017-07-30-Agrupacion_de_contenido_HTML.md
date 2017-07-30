@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ¿Qué es HTML?
+title: Agrupación de contenido
 categories:
 - blog
 tags:

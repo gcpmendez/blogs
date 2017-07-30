@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ¿Qué es HTML?
+title: Elemento raíz
 categories:
 - blog
 tags:

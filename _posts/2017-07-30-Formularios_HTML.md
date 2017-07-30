@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ¿Qué es HTML?
+title: Formularios
 categories:
 - blog
 tags:

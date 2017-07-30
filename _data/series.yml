@@ -1,11 +1,13 @@
 - name: HTML
   desc: |
     Lenguaje de marcas de hipertexto (HyperText Markup Language) para la elaboración de páginas web.
+  version: 5
   tag_name: HTML
 
 - name: CSS
   desc: |
     Hojas de estilo en cascada (Cascading Stylesheets) es un lenguaje muy usado para establecer el diseño visual de las páginas web
+  version: 3
   tag_name: CSS
 
 - name: JavaScript
@@ -41,6 +43,7 @@
 - name: Markdown
   desc: |
     Lenguaje de marcado ligero que trata de conseguir la máxima legibilidad y facilidad de publicación tanto en su forma de entrada como de salida.
+  version: 1.0.1
   tag_name: Markdown
 
 - name: Git
