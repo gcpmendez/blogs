@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elemento raíz
+title: Scripting
 categories:
 - blog
 tags:

@@ -5,7 +5,7 @@ categories:
 - blog
 tags:
 - HTML
-status: notFinished
+status: favorite
 ---
 
 
