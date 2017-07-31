@@ -76,6 +76,12 @@
   }
 }
 
+.icon-google-plus {
+  &:before {
+    content: $icon-google-plus;
+  }
+}
+
 .icon-linkedin {
     &:before {
         content: $icon-linkedin;
@@ -208,7 +214,33 @@
     transform: translate(130%, 30%);
 }
 
-.footer {
+.footer_main {
+    color: #999;
+    text-align: center;
+    margin: 2rem;
+
+    a {
+        color: #999;
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+   p {
+        font-family: "Varela Round", sans-serif;
+        display: block;
+        margin-top: 3px;
+        margin-bottom: 1rem;
+        color: #9a9a9a;
+        font-size: 0.8rem;
+
+        a:hover {
+            color: black;
+        }
+   }
+
+}
+
+.footer_post {
     color: #999;
     text-align: center;
     margin: 2rem;
