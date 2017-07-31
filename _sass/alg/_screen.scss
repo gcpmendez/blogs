@@ -71,15 +71,23 @@
 }
 
 .icon-facebook {
-  &:before {
-    content: $icon-facebook;
-  }
+    &:before {
+        content: $icon-facebook;
+    }
+
+    &:hover {
+        color: #3b5998;
+    }
 }
 
 .icon-google-plus {
-  &:before {
-    content: $icon-google-plus;
-  }
+    &:before {
+        content: $icon-google-plus;
+    }
+
+    &:hover {
+        color: #db4437;
+    }
 }
 
 .icon-linkedin {
