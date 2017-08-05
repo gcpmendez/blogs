@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<!-- Cabecera del cuerpo-->
+{% include header.html %}
+
+<!-- Variable words -->
+{% capture words %}
+  {{ page.content | number_of_words }}
+{% endcapture %}
+
+<!-- Variables day, month y year -->
+{% assign months = "Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre" | split: "|" %}
+{% assign m = page.date | date: "%-m" | minus: 1 %}
+{% assign day = page.date | date: "%d" %}
+{% assign month = months[m] %}
+{% assign year = page.date | date: "%Y" %}
+
+<!-- Publicación -->
+<article>
+
+  <!-- Variables tag_count y moreTags_count -->
+  {% assign tag_count = page.tags | size %}
+  {% assign moreTags_count = page.more_tags | size %}
+
+  <!-- Título -->
+  <h1 class="title">
+    {{ page.title }}
+  </h1>
+
+  <!-- Subtitulo -->
+  <p class="subtitle">
+
+    <!-- Etiquetas -->
+    <span>
+    {% if moreTags_count > 0 %}
+      Etiquetas:
+      <a href="/#{{ page.tags }}">{{ page.tags }}</a>,
+      {% for moreTags in page.more_tags %}
+        {% if forloop.last %}
+          <a href="/#{{ moreTags }}">{{ moreTags }}</a>
+        {% else %}
+          <a href="/#{{ moreTags }}">{{ moreTags }}</a>,
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      Etiqueta:
+      <a href="/#{{ page.tags }}">{{ page.tags }}</a>
+    {% endif %}
+    </span>
+
+    <!-- Tiempo de lectura -->
+    <span class="minutes_of_read">
+      Tiempo de lectura: <span style="color:black">{{ words | plus: 250 | divided_by: 180 | append: " minutos" }} </span>
+    </span>
+
+    <!-- Fecha de publicación -->
+    <span class="date">
+      Fecha de publicación: <span style="color:black">{{ day }} de {{ month }}, {{ year }}</span>
+    </span>
+    </p>
+
+    
+    </br>
+    </br>
+
+  <!-- Contenido de la publicación -->
+  <div id="post">{{ content }}</div>      
+
+  <!-- Pie-->
+  {% include footer_post.html %}
+</article>
+

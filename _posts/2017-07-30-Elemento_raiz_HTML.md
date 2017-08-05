@@ -90,6 +90,6 @@ h6 {
 <br/>
 <!-- Ejemplo -->
 # Ejemplo
-El DOCTYPE usado en el siguiente ejemplo indica que es un documento HTML5.
+El DOCTYPE usado en el siguiente ejemplo indica que es un documento HTML5:
 
  <script markdown='1' src="https://gist.github.com/gcpmendez/4ae1c7c7c01ef7df1f251652f7028fb5.js"></script>
