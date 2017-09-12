@@ -60,3 +60,9 @@
   desc: |
     Lenguaje de programación interpretado, reflexivo y orientado a objetos.
   tag_name: Ruby
+
+
+- name: Administrador de sistemas
+  desc: |
+    Lo que todo Administrador de sistemas debería conocer
+  tag_name: Administrador de sistemas
