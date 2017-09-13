@@ -9,7 +9,7 @@ En está página iré indexando el conocimiento necesario para mejorar como ajed
 
 <div id="archive">
 
-<h2>Aperturas</h2>
+<h2>Aperturas y defensas</h2>
   <ul>
   {% for post in site.posts %}
     {% if post.layout == "chess_post" %}
