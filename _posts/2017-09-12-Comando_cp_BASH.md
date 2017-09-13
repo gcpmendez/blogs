@@ -218,18 +218,17 @@ $ cp -s /home/user/Documents/file_6.txt file_6.txt
 ```
 <ins>La creación de enlaces simbólicos sólo se puede hacer en el directorio actual</ins>. 
 
-A continuación, al listar el archivo copiado con detalle, verá que file_6.txt apunta al archivo original. <ins>Estará marcado con un signo de flecha después del nombre del archivo</ins>.
+A continuación, al listar el archivo copiado con detalle, verá que **file_6.txt** apunta al archivo original. <ins>Estará marcado con un signo de flecha después del nombre del archivo</ins>.
 
 ## 6. Copiar sin seguir los **enlaces simbólicos en la FUENTE**
+Para hacer esto podemos usar la opción `-P`. Cuando el comando cp encuentra un archivo con un enlace simbólico lo copiará como está. Echa un vistazo al ejemplo siguiente:
+```
+$ cp -P file_6.txt ~/movies/
+```
 
-To do this, we can use -P option. When cp command found a file with symbolic links, it will copy the as is. Take a look at the sample below.
+Como verás el comando cp copiará el archivo **file_6.txt** como está. El tipo de archivo sigue siendo enlace simbólico.
 
-    $ cp -P file_6.txt ./movie
-
-Copy using -P option
-
-As you can see, the cp command will copy file_6.txt as is. The file type still a symbolic link.
-7. Copy with following symbolic links in Source
+## 7. Copy with following symbolic links in Source
 
 Now we can do this with -L option. Basically, this is an opposite of -P option above. Here’s the sample.
 
