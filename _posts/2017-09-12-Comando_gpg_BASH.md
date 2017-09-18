@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expresiones regulares
+title: $ gpg
 categories:
 - blog
 tags:
@@ -75,4 +75,3 @@ h6 {
 <!-- Contenido post -->
 # Contenido
 
-<https://blog.desdelinux.net/du-ver-directorios-ocupan-espacio/>

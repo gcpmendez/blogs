@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expresiones regulares
+title: $ ls
 categories:
 - blog
 tags:

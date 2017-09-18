@@ -1,6 +1,6 @@
 ---
 layout: post
-title: mv
+title: $ mv
 categories:
 - blog
 tags:
@@ -70,6 +70,7 @@ h6 {
 
 <!-- Imagen Markdown -->
 # <img src="./../static/bash.png" alt="Drawing" style="width: 270px;"/>
+
 
 <!-- Contenido post -->
 # Contenido

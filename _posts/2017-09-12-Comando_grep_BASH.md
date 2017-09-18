@@ -1,6 +1,6 @@
 ---
 layout: post
-title: grep
+title: $ grep
 categories:
 - blog
 tags:
@@ -69,7 +69,8 @@ h6 {
 </style>
 
 <!-- Imagen Markdown -->
-# <img src="./../static/markdown.png" alt="Drawing" style="width: 270px;"/>
+# <img src="./../static/bash.png" alt="Drawing" style="width: 270px;"/>
+
 
 <!-- Contenido post -->
 # Contenido
