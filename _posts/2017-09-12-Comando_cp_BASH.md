@@ -97,14 +97,20 @@ Comando de referencia para **copiar archivos y directorios**. Su lógica consist
 
 |Opción|Descripción|
 |--|--|
-|`-f, --force`|Si no se puede abrir un archivo de destino existente, eliminalo y vuelve a intentarlo (esta opción se omite cuando también se utiliza la opción -n).|
+|`-a, --archive`|Los mismo que `-dR --preserve=all`.|
+|`--attributes-only`| No copia el contenido del archivo, sólo sus **atributos**.|
+|`--backup[=CONTROL]`|Hace una **copia de seguridad de cada archivo de destino existente**.|
+||El sufijo de la copia de seguridad es `~`, a menos que establescas otro con la opción `--suffix` or SIMPLE_BACKUP_SUFFIX.  El método de control de versiones puede seleccionarse mediante la opción -backup o mediante la variable de entorno VERSION_CONTROL.<br><br>Posibles valores de CONTROL:<br>+ `one, off`: nunca hace copias de seguridad (incluso si se da `--backup`).<br>+ `numbered, t`: realiza copias de seguridad numeradas.<br>+ `existing, nil`: numeradas si existen copias de seguridad numeradas, simple en otro caso.<br>+ `simple, never`: siempre hace simples copias de seguridad.|
+|`-b`|Como `--backup` pero no acepta argumentos.|
+|`-f, --force`|Si no se puede abrir un archivo de destino existente, eliminalo y vuelve a intentarlo (esta opción se omite cuando también se utiliza la opción `-n`).|
 |`-i, --interactive`|Pregunta antes de sobreescribir (anula la opción `-n`)|
-|`-n, --no-clobber`|No sobreescribas un archivo existente (anula la opción `-i`).|
+|`-n, --no-clobber`|**No sobreescribas un archivo existente** (anula la opción `-i`).|
 |`-P, --no-dereference`|Nunca seguir los enlaces simbólicos en el ORIGEN.|
-|`-R, -r, --recursive`|Copia directorios recursivamente.|
+|`--remove-destination`|**Elimina cada archivo de destino existente antes de intentar abrirlo** (contrasta con `--force`)|
+|`-R, -r, --recursive`|**Copia directorios** recursivamente.|
 |`-s, --symbolic-link`|Establecer un **link simbólico** en lugar de copiarlo.|
 |`-u, --update`|Copia solo cuando los archivos FUENTE son más recientes que los archivos de DESTINO o cuando el archivo de DESTINO no existe.|
-|`-v, --verbose`|Explicar lo que se está haciendo.|
+|`-v, --verbose`|**Explicar lo que se está haciendo** durante la copia.|
 
 
 <br>
@@ -112,55 +118,21 @@ Comando de referencia para **copiar archivos y directorios**. Su lógica consist
 
 |Opción|Descripción|
 |--|--|
-|`-a, --archive`|Los mismo que `-dR --preserve=all`.|
-|`--attributes-only`| No copia los datos del archivo, sólo sus atributos.|
-|`--backup[=CONTROL]`|make a backup of each existing destination file|
-||The  backup  suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.  The version control method may be selected via the --backup option or through the VERSION_CONTROL environment variable.<br>Here are the values:<br><br>one, off<br>never make backups (even if --backup is given)<br>numbered, t<br>make numbered backups<br>existing, nil<br>numbered if numbered backups exist, simple otherwise<br>simple, never<br>  always make simple backups<br>As a special case, cp makes a backup of SOURCE when the force and backup options are given and SOURCE and DEST are the same name for an existing, regular file.|
-|`-b`|like --backup but does not accept an argument|
-|`--copy-contents`|copy contents of special files when recursive|
-|`-d`|same as --no-dereference --preserve=links|
-|`-H`|follow command-line symbolic links in SOURCE|
-|`-l, --link`|hard link files instead of copying|
-|`-L, --dereference`|always follow symbolic links in SOURCE|
-|`-p`|same as --preserve=mode,ownership,timestamps|
-|`--preserve[=ATTR_LIST]`|preserve the specified attributes (default: mode,ownership,timestamps), if possible additional attributes: context, links, xattr, all|
-|`--no-preserve=ATTR_LIST`|don't preserve the specified attributes|
-|`--parents`|use full source file name under DIRECTORY|
-|`--reflink[=WHEN]`|control clone/CoW copies. See below|
-|`--remove-destination`|remove each existing destination file before attempting to open it (contrast with --force)|
-|`--sparse=WHEN`|control creation of sparse files. See below|
-|`--strip-trailing-slashes`|remove any trailing slashes from each SOURCE argument|
-|`-S, --suffix=SUFFIX`|override the usual backup suffix|
-|`-t, --target-directory=DIRECTORY`|copy all SOURCE arguments into DIRECTORY|
-|`-T, --no-target-directory`|treat DEST as a normal file|
-|`-x, --one-file-system`|stay on this file system|
-|`-Z`|set SELinux security context of destination file to default type
-|--context[=CTX]|like -Z, or if CTX is specified then set the SELinux or SMACK security context to CTX|
-|`--help`|Muestra esta ayuda y sale|
-|`--version`|Muestra información sobre la versión y sale|
+|`-d`|Lo mismo que `--no-dereference --preserve=links`.|
+|`-H`|Sigue los enlace simbólicos de la línea de comandos en la FUENTE.|
+|`-l, --link`|Archivos de enlaces duros en lugar de copiar.|
+|`-L, --dereference`|Siempre sigue los enlaces simbólicos en la FUENTE.|
+|`-p`|Lo mismo que `--preserve=mode,ownership,timestamps`|
+|`--preserve[=ATTR_LIST]`|Conserva los atributos especificados (Por defecto: mode,ownership,timestamps), si es posible los atributos adicionales: context, links, xattr, all|
+|`--no-preserve=ATTR_LIST`|No conserves los atributos especificados.|
+|`--strip-trailing-slashes`|Elimina las barras diagonales finales de cada argumento FUENTE.|
+|`-S, --suffix=SUFFIX`|Sobreescribe el sufijo usual de la copia de seguridad.|
+|`-t, --target-directory=DIRECTORY`|copiar todos los argumentos FUENTE en el DIRECTORIO.|
+|`-T, --no-target-directory`|Tratar el DESTINO como un archivo normal.|
+|`--help`|Muestra la **ayuda** y sale.|
+|`--version`|Muestra **información sobre la versión** y sale.|
 
-       By default, sparse SOURCE files are detected by a crude heuristic and the corresponding DEST file is made sparse as well.  That is the behavior selected by --sparse=auto.  Specify --sparse=always to
-       create a sparse DEST file whenever the SOURCE file contains a long enough sequence of zero bytes.  Use --sparse=never to inhibit creation of sparse files.
-
-       When --reflink[=always] is specified, perform a lightweight copy, where the data blocks are copied only when modified.  If this is not possible the copy fails, or  if  --reflink=auto  is  specified,
-       fall back to a standard copy.
-
-       The  backup  suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.  The version control method may be selected via the --backup option or through the VERSION_CONTROL environment variable.
-       Here are the values:
-
-       none, off
-              never make backups (even if --backup is given)
-
-       numbered, t
-              make numbered backups
-
-       existing, nil
-              numbered if numbered backups exist, simple otherwise
-
-       simple, never
-              always make simple backups
-
-       As a special case, cp makes a backup of SOURCE when the force and backup options are given and SOURCE and DEST are the same name for an existing, regular file.
+      
 
 <br>
 <!-- Ejemplos post -->
@@ -309,28 +281,25 @@ Como podrás ver, la opción `--backup=simple` creará un archivo de respaldo ma
 <br>
 ## 13. Copia solo los **atributos del archivo**
 
-Cp command also provide us with --attributes-only option. As we can guess from its name, this option will only copy a file name and its attributes without copying any data. Here’s a sample.
+El comando `cp` también nos proporciona la opción `--attributes-only`. Como podemos adivinar a partir de su nombre, esta opción sólo copiará un nombre de archivo y sus atributos sin copiar ningún dato. Lo enseñamos a continuación:
+```
+$ cp --attributes-only file_6.txt -v ../Documents/
+```
 
-    $ cp --attributes-only file_6.txt -v ../office
-
-Copy attributes only
-
-From screenshot above, the original file_6.txt file has 50 bytes file size. Using --attributes-only option, the copied file will have 0 bytes file size. This is because the content of file is not being copied.
-
-<br>
-## 14. Force copying
-
-Using -f option will force the copying activity. If the destination files cannot be opened, then -f will try again.
-
-    $ cp -f *.txt -v ../office
-
-Copy with force
+Podremos ver que el archivo **file_6.txt** tendrá un tamaño mayor que 0 bytes ya que posee datos y al usar la opción `--attributes-only` veremos que el archivo copiado tendrá un tamaño de 0. Esto es por que el contenido del archivo no ha sido copiado, únicamente hemos copiado sus atributos.
 
 <br>
-## 15. Remove destination before copy
+## 14. **Forzando** la copia
 
-To do this, we can use --remove-destination option. This option is contrast with -f option above. If the cp command find the same file name on the destination folder, cp command will remove destination file first, the copy the new one. Here’s an example.
+El uso de la opción `-f` forzará la actividad de copia. Si los archivos de destino no se pueden abrir, entonces `-f` lo intentará de nuevo.
+```
+$ cp -f *.txt -v ../Documents/
+```
 
-    $ cp --remove-destination *.txt -v ../office
+<br>
+## 15. **Eliminando el destino** antes de copiar
 
-Remove destination option
+Para hacer esto, podemos usar la opción `--remove-destination`. Esta opción contrasta con la opción `-f` anterior. Si el comando `cp` encuentra el mismo nombre de archivo en la carpeta de destino, el comando `cp` quitará primero el archivo de destino y copiará el nuevo. Ejemplo:
+```
+$ cp --remove-destination *.txt -v ../Documents/
+```
