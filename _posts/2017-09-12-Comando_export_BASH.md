@@ -1,6 +1,6 @@
 ---
 layout: post
-title: $ cp
+title: $ export (Variables de entorno)
 categories:
 - blog
 tags:
@@ -79,81 +79,101 @@ h6 {
 
 <br>
 # Regla mnemotécnica
-cp = <b>C</b>o<b>p</b>y
+export = <b>export</b> to environment
+
 
 <br>
 # Descripción
-Comando de referencia para **copiar archivos y directorios**. Su lógica consiste en copiar de ORIGEN a DESTINO, o de multiples ORIGEN(es) a un DIRECTORIO.
+Las llamadas **variables de entorno** se definen a nivel de sistema operativo para el correcto o mejor funcionamiento del mismo. Muchas de ellas son predefinidas pero cada usuario puede definir también sus propias variables para su entorno. El funcionamiento de las variables de entorno es el mismo que las variables normales. <ins>Se suelen diferenciar usando normalmente letras mayúsculas para definirlas</ins>.
 
-> **Nota:** Los argumentos obligatorios para las opciones largas son obligarios también para las opciones cortas.
+El comando `export` es el que nos permite crear o modificar variables de entorno.
 
 <br>
 # Esquema
-``` sh
-cp [OPTION]... [-T] SOURCE DEST  
-cp [OPTION]... SOURCE... DIRECTORY  
-cp [OPTION]... -t DIRECTORY SOURCE...  
+```
+export [-fn] [name[=value] ...] 
+export -p
 ```
 
 
 <br>
-# Opciones + usadas
+# Opciones 
 
 |Opción|Descripción|
 |--|--|
-|`-a, --archive`|Los mismo que `-dR --preserve=all`.|
-|`--attributes-only`| No copia el contenido del archivo, sólo sus **atributos**.|
-|`--backup[=CONTROL]`|Hace una **copia de seguridad de cada archivo de destino existente**.|
-||El sufijo de la copia de seguridad es `~`, a menos que establescas otro con la opción `--suffix` or SIMPLE_BACKUP_SUFFIX.  El método de control de versiones puede seleccionarse mediante la opción -backup o mediante la variable de entorno VERSION_CONTROL.<br><br>Posibles valores de CONTROL:<br>+ `one, off`: nunca hace copias de seguridad (incluso si se da `--backup`).<br>+ `numbered, t`: realiza copias de seguridad numeradas.<br>+ `existing, nil`: numeradas si existen copias de seguridad numeradas, simple en otro caso.<br>+ `simple, never`: siempre hace simples copias de seguridad.|
-|`-b`|Como `--backup` pero no acepta argumentos.|
-|`-f, --force`|Si no se puede abrir un archivo de destino existente, eliminalo y vuelve a intentarlo (esta opción se omite cuando también se utiliza la opción `-n`).|
-|`-i, --interactive`|Pregunta antes de sobreescribir (anula la opción `-n`)|
-|`-n, --no-clobber`|**No sobreescribas un archivo existente** (anula la opción `-i`).|
-|`-P, --no-dereference`|Nunca seguir los enlaces simbólicos en el ORIGEN.|
-|`--remove-destination`|**Elimina cada archivo de destino existente antes de intentar abrirlo** (contrasta con `--force`)|
-|`-R, -r, --recursive`|**Copia directorios** recursivamente.|
-|`-s, --symbolic-link`|Establecer un **link simbólico** en lugar de copiarlo.|
-|`-u, --update`|Copia solo cuando los archivos FUENTE son más recientes que los archivos de DESTINO o cuando el archivo de DESTINO no existe.|
-|`-v, --verbose`|**Explicar lo que se está haciendo** durante la copia.|
+|`-f`|refer to shell functions|
+|`-n`|remove the export property from each NAME|
+|`-p`|Muestra una lista de todas las variables y funciones exportadas.|
 
 
-<br>
-# Opciones - usadas
 
-|Opción|Descripción|
-|--|--|
-|`-d`|Lo mismo que `--no-dereference --preserve=links`.|
-|`-H`|Sigue los enlace simbólicos de la línea de comandos en la FUENTE.|
-|`-l, --link`|Archivos de enlaces duros en lugar de copiar.|
-|`-L, --dereference`|Siempre sigue los enlaces simbólicos en la FUENTE.|
-|`-p`|Lo mismo que `--preserve=mode,ownership,timestamps`|
-|`--preserve[=ATTR_LIST]`|Conserva los atributos especificados (Por defecto: mode,ownership,timestamps), si es posible los atributos adicionales: context, links, xattr, all|
-|`--no-preserve=ATTR_LIST`|No conserves los atributos especificados.|
-|`--strip-trailing-slashes`|Elimina las barras diagonales finales de cada argumento FUENTE.|
-|`-S, --suffix=SUFFIX`|Sobreescribe el sufijo usual de la copia de seguridad.|
-|`-t, --target-directory=DIRECTORY`|copiar todos los argumentos FUENTE en el DIRECTORIO.|
-|`-T, --no-target-directory`|Tratar el DESTINO como un archivo normal.|
-|`--help`|Muestra la **ayuda** y sale.|
-|`--version`|Muestra **información sobre la versión** y sale.|
-
-      
 
 <br>
 <!-- Ejemplos post -->
 # Ejemplos
 
 
+
+ Así
+
+export VARIABLE-NAME
+
+nos exporta VARIABLE-NAME o
+
+export VARIABLE-NAME=valor
+
+nos define y exporta VARIABLE-NAME como variable en entorno al mismo tiempo que el asigna un valor. Si no usásemos el comando export, VARIABLE-NAME se mantendría como una variable normal.
+Ejemplos
+USER 	Contine el nombre del usuario.
+HOSTNAME 	Contine el nombre de la máquina.
+HOME 	Indica cual es el directorio home del usuario.
+PATH 	Contine los lugareres o paths del sistema donde se buscarán programas y comandos.
+SHELL 	Indica cual es el intérprete de comando que se esta usando.
+
+Es importante por ejemplo la variable PATH que nos dice donde se encuentran comandos tipo ls, cp, if, etc para su ejecución. Podemos mostrar su valor con
+
+$ echo $PATH
+
+Como veis cada path diferente viene separado por “:“. Podemos modificarla para que busque comandos y programas en la carpeta bin de nuestro home, donde podremos poner nuestros propios programas y scripts para poder ejecutarlos fácilmente desde cualquier directorio sin necesidad de copiarlos.
+
+$ PATH=$PATH:$HOME/bin
+$ export PATH
+$ #Que es equivalente a ejecutar directamente
+$ export PATH=$PATH:$HOME/bin
+$ echo $PATH
+
+Como veis hemos añadido al final a la variable PATH la carpeta $HOME/bin, y hemos usado la variable de entorno $HOME. Hay que tener cuidado de añadir y no sustituir con:
+
+$ export PATH=$HOME/bin
+$ echo $PATH
+
+donde el comando echo no funcionará pues nuestro PATH será únicamente $HOME/bin, no puede ejecutar el comando echo ni ningún otro porque no va a buscar comandos a ningún otro sitio. Lo más sano en este caso es cerrar la terminal y abrir otra.
+
+
+
+
+
+
+
 >**Nota:** Cuando no sepas cómo usar un comando en Linux, hay un manual al que puede referirse escribiendo:
 `man [insert command here]` en una terminal.
 
 <br>
-## 1. Ejecutamos **cp** sin ninguna opción
+## 1. Crea una **variable de entorno sin definir**
 
-Este es un uso muy básico del comando cp. Para copiar un archivo llamado file.txt desde un directorio a otro directorio, podemos escribir algo así: 
+Este es un uso muy básico del comando `export`. 
 ```
-$ cp file.txt ~/Documents/
+$ export VAR_NAME
 ```
-Si no escribimos una ruta absoluta, significa que estamos copiando un archivo del directorio actual. En el ejemplo anterior **file.txt** se encuentra en **/home/user/desktop/** y no hemos tecleado su ruta completa ya que nos encontramos en ese directorio. Mientras que **~/Documents/** es una carpeta donde se copiará el archivo.
+
+<br>
+## 2. Crea una **variable de entorno definida**
+Este es un uso muy básico del comando `export`. 
+```
+$ export VAR_NAME=valor
+```
+## 3. Muestra la **variable de entorno** que contiene el **nombre del usuario**
+
 
 
 > **Nota:** Linux es sensible a mayúsculas y minúsculas además de necesitar el carácter `/` después de cada directorio para saber que no trabaja con un archivo.
