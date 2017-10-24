@@ -85,68 +85,20 @@ cp = <b>C</b>o<b>p</b>y
 # Descripción
 Comando de referencia para **copiar archivos y directorios**. Su lógica consiste en copiar de ORIGEN a DESTINO, o de multiples ORIGEN(es) a un DIRECTORIO.
 
-> **Nota:** Los argumentos obligatorios para las opciones largas son obligarios también para las opciones cortas.
-
 <br>
 # Esquema
 ``` sh
-cp [OPTION]... [-T] SOURCE DEST  
-cp [OPTION]... SOURCE... DIRECTORY  
-cp [OPTION]... -t DIRECTORY SOURCE...  
+cp [PARÁMETROS] ORIGEN... DESTINO  
 ```
-
-
-<br>
-# Opciones + usadas
-
-|Opción|Descripción|
-|--|--|
-|`-a, --archive`|Los mismo que `-dR --preserve=all`.|
-|`--attributes-only`| No copia el contenido del archivo, sólo sus **atributos**.|
-|`--backup[=CONTROL]`|Hace una **copia de seguridad de cada archivo de destino existente**.|
-||El sufijo de la copia de seguridad es `~`, a menos que establescas otro con la opción `--suffix` or SIMPLE_BACKUP_SUFFIX.  El método de control de versiones puede seleccionarse mediante la opción -backup o mediante la variable de entorno VERSION_CONTROL.<br><br>Posibles valores de CONTROL:<br>+ `one, off`: nunca hace copias de seguridad (incluso si se da `--backup`).<br>+ `numbered, t`: realiza copias de seguridad numeradas.<br>+ `existing, nil`: numeradas si existen copias de seguridad numeradas, simple en otro caso.<br>+ `simple, never`: siempre hace simples copias de seguridad.|
-|`-b`|Como `--backup` pero no acepta argumentos.|
-|`-f, --force`|Si no se puede abrir un archivo de destino existente, eliminalo y vuelve a intentarlo (esta opción se omite cuando también se utiliza la opción `-n`).|
-|`-i, --interactive`|Pregunta antes de sobreescribir (anula la opción `-n`)|
-|`-n, --no-clobber`|**No sobreescribas un archivo existente** (anula la opción `-i`).|
-|`-P, --no-dereference`|Nunca seguir los enlaces simbólicos en el ORIGEN.|
-|`--remove-destination`|**Elimina cada archivo de destino existente antes de intentar abrirlo** (contrasta con `--force`)|
-|`-R, -r, --recursive`|**Copia directorios** recursivamente.|
-|`-s, --symbolic-link`|Establecer un **link simbólico** en lugar de copiarlo.|
-|`-u, --update`|Copia solo cuando los archivos FUENTE son más recientes que los archivos de DESTINO o cuando el archivo de DESTINO no existe.|
-|`-v, --verbose`|**Explicar lo que se está haciendo** durante la copia.|
-
-
-<br>
-# Opciones - usadas
-
-|Opción|Descripción|
-|--|--|
-|`-d`|Lo mismo que `--no-dereference --preserve=links`.|
-|`-H`|Sigue los enlace simbólicos de la línea de comandos en la FUENTE.|
-|`-l, --link`|Archivos de enlaces duros en lugar de copiar.|
-|`-L, --dereference`|Siempre sigue los enlaces simbólicos en la FUENTE.|
-|`-p`|Lo mismo que `--preserve=mode,ownership,timestamps`|
-|`--preserve[=ATTR_LIST]`|Conserva los atributos especificados (Por defecto: mode,ownership,timestamps), si es posible los atributos adicionales: context, links, xattr, all|
-|`--no-preserve=ATTR_LIST`|No conserves los atributos especificados.|
-|`--strip-trailing-slashes`|Elimina las barras diagonales finales de cada argumento FUENTE.|
-|`-S, --suffix=SUFFIX`|Sobreescribe el sufijo usual de la copia de seguridad.|
-|`-t, --target-directory=DIRECTORY`|copiar todos los argumentos FUENTE en el DIRECTORIO.|
-|`-T, --no-target-directory`|Tratar el DESTINO como un archivo normal.|
-|`--help`|Muestra la **ayuda** y sale.|
-|`--version`|Muestra **información sobre la versión** y sale.|
-
-      
-
-<br>
-<!-- Ejemplos post -->
-# Ejemplos
 
 
 >**Nota:** Cuando no sepas cómo usar un comando en Linux, hay un manual al que puede referirse escribiendo:
 `man [insert command here]` en una terminal.
 
+
 <br>
+<!-- Ejemplos post -->
+# Ejemplos
 ## 1. Ejecutamos **cp** sin ninguna opción
 
 Este es un uso muy básico del comando cp. Para copiar un archivo llamado file.txt desde un directorio a otro directorio, podemos escribir algo así: 
@@ -307,3 +259,7 @@ Para hacer esto, podemos usar la opción `--remove-destination`. Esta opción co
 ```
 $ cp --remove-destination *.txt -v ../Documents/
 ```
+<br>
+# Referencias
+Wikipedia: <https://es.wikipedia.org/wiki/Cp_(Unix)>  
+Linoxide: <https://linoxide.com/linux-command/linux-cp-command/>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: $ export (Variables de entorno)
+title: $ export
 categories:
 - blog
 tags:
@@ -91,8 +91,7 @@ El comando `export` es el que nos permite crear o modificar variables de entorno
 <br>
 # Esquema
 ```
-export [-fn] [name[=value] ...] 
-export -p
+export VAR=value
 ```
 
 
