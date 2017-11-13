@@ -103,7 +103,7 @@ Comando de referencia que se usa para **verificar la información de uso de disc
 
 Este es un uso muy básico del comando du. 
 
-> Nota: Si no establecemos el directorio a partir del cual obtendrá el resumen de uso del disco el lo establece automáticamente con la ubicación en la que te encuentres. 
+> **Nota:** Si no establecemos el directorio a partir del cual obtendrá el resumen de uso del disco el lo establece automáticamente con la ubicación en la que te encuentres. 
 
 ```
 $ du
@@ -129,7 +129,7 @@ $ du -h ~/Documents/
 
 La salida del comando `du -h ~/Documents/` mostrará el tamaño en disco del directorio y sus subdirectorios.
 
-> Nota: por defecto el tamaño de bloque establecido en el comando `du` es de 1024 bytes o lo que es lo mismo 1 Kilobytes.
+> **Nota:** por defecto el tamaño de bloque establecido en el comando `du` es de **1024 bytes** o lo que es lo mismo **1 Kilobytes**.
 
 <br>
 ## 3. Ejecutamos **du** con la opción **-s** 
@@ -152,6 +152,32 @@ $ du -ha ~/Documents/
 ```
 La salida del comando `du -ha ~/Documents/` mostrará el tamaño en "formato humano" de los archivos y directorios que se encuentran dentro del directorio dado.
 
+<br>
+## 5. Ejecutamos **du** con la opción **-k** 
+
+Esta opción <ins>muestra el tamaño usado en disco en unidades de 1024 bytes</ins>. 
+```
+$ du -k ~/Documents/
+```
+La salida del comando `du -k ~/Documents/` mostrará el recuento de bloques usados en unidades de Kilobytes.
+
+<br>
+## 6. Ejecutamos **du** con la opción **-m** 
+
+Esta opción <ins>muestra el tamaño usado en disco en unidades de 1024 bytes.</ins>. 
+```
+$ du -m ~/Documents/
+```
+La salida del comando `du -m ~/Documents/` mostrará el recuento de bloques usados en unidades de Megabytes.
+
+<br>
+## 7. Ejecutamos **du** con la opción **-c** 
+
+Esta opción <ins>añade en la última línea el espacio de disco usado por el directorio.</ins>. 
+```
+$ du -m ~/Documents/
+```
+La salida del comando `du -m ~/Documents/` mostrará el recuento de bloques usados en unidades de Megabytes.
 
 
 
