@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Combinación de teclas
+title: ¿Qué es Bash?
 categories:
 - blog
 tags:
 - Bash
 status: notFinished
+status: favorite
 ---
 
 
@@ -18,7 +19,6 @@ table {
 }
 
 td {
-  vertical-align: baseline;
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -26,13 +26,8 @@ td {
 
 th {
     text-align: center;
+    width: 50%;
 }
-
-th:first-child {
-    text-align: center;
-    width: 30%;
-}
-
 tr:nth-child(even) {
     background-color: rgba(238, 238, 238, 0.57);
 }
@@ -74,24 +69,8 @@ h6 {
 </style>
 
 <!-- Imagen Markdown -->
-# <img src="./../static/bash.png" alt="Drawing" style="width: 270px;"/>
-
+# <img src="./../static/markdown.png" alt="Drawing" style="width: 170px;"/>
 
 <!-- Contenido post -->
 # Contenido
-
-<br>
-
-| Comando  |	Descripción |
-| -- | -- |
-| tab       | 	Completa nombres de carpetas o archivos |
-| ctrl + l  | 	Borra las líneas de texto de pantalla/terminal |
-| ctrl + alt + F1 F2 | 	Cambio de consola |
-| ctrl + F1 F2 | 	Cambio de escritorio |
-| ctrl + z  |	Suspensión de un proceso |
-| ctrl + d  |	Muestra el final de un archivo EOF |
-| ctrl + c  | 	Termina/finaliza un proceso en ejecución |
-| ctrl + backspace | 	Cierra el modo X (sale del sistema X y regresa a la consola) |
-
-<br>
-# Referencias
+En construcción!

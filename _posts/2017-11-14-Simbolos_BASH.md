@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Combinación de teclas
+title: Símbolos
 categories:
 - blog
 tags:
