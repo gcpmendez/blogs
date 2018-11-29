@@ -5,6 +5,7 @@ categories:
 - blog
 tags:
 - Markdown
+comments: true
 ---
 
 <!-- Estilo CSS del post-->

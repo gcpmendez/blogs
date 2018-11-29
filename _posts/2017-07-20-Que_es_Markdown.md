@@ -6,12 +6,14 @@ categories:
 tags:
 - Markdown
 status: favorite
+comments: true
 ---
 
 
 <!-- Estilo CSS del post-->
 <style>
 table {
+  
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
